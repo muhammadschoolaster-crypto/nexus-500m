@@ -34,8 +34,6 @@ jobs:
   android-build:
     runs-on: ubuntu-latest
     timeout-minutes: 45
-    # runs only once the android app exists on this branch/commit
-    if: ${{ hashFiles('android/settings.gradle.kts') != '' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-java@v4
