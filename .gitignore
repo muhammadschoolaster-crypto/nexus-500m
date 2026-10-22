@@ -1,0 +1,41 @@
+# ===== Secrets & credentials (NEVER COMMIT) =====
+.env
+.env.*
+*.token
+*ghtoken*
+.netrc
+*.jks
+*.keystore
+key.properties
+secrets.properties
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.coverage
+
+# ===== Heavy training artifacts (keep repo small) =====
+artifacts/checkpoints/
+artifacts/runs/
+*.pt
+*.bin
+*.safetensors
+!artifacts/demo_model/*.nexus
+
+# ===== Android / Gradle =====
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+*.apk
+*.aab
+!gradle/wrapper/gradle-wrapper.jar
+
+# ===== OS / editor =====
+.DS_Store
+.idea/
+*.iml
