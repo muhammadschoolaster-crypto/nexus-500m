@@ -1,0 +1,187 @@
+# JavaScript, TypeScript, SQL, shell and config examples
+# Provenance: authored by the NEXUS-500M project for training demonstration. License: MIT (project).
+
+## JavaScript: function
+
+A JavaScript function is declared with the `function` keyword. Modern code often uses arrow functions instead.
+
+```javascript
+function add(a, b) {
+    return a + b;
+}
+const square = (x) => x * x;
+```
+
+Example: `add(2, 3)` is `5`. Example: `square(5)` is `25`.
+
+## JavaScript: template literals
+
+Template literals use backticks and `${}` to insert values into strings.
+
+```javascript
+const name = "Sara";
+const msg = `Hello, ${name}`;
+```
+
+Example: `msg` is `Hello, Sara`.
+
+## JavaScript: array map
+
+The `map` method builds a new array by transforming every element.
+
+```javascript
+const nums = [1, 2, 3];
+const doubled = nums.map((n) => n * 2);
+```
+
+Example: `doubled` is `[2, 4, 6]`.
+
+## JavaScript: fetch example
+
+The `fetch` API requests data over the network. Always handle errors with `catch`.
+
+```javascript
+async function getUser(id) {
+    try {
+        const res = await fetch(`/api/users/${id}`);
+        return await res.json();
+    } catch (err) {
+        return null;
+    }
+}
+```
+
+## TypeScript: typed function
+
+TypeScript adds types to JavaScript. The types are checked before the code runs.
+
+```typescript
+function add(a: number, b: number): number {
+    return a + b;
+}
+```
+
+Example: `add(2, 3)` returns `5`. Calling `add("2", 3)` is rejected by the compiler.
+
+## TypeScript: interface
+
+An interface describes the shape of an object.
+
+```typescript
+interface Note {
+    title: string;
+    body: string;
+}
+const n: Note = { title: "todo", body: "write report" };
+```
+
+## HTML: simple page
+
+A minimal HTML page has a head with a title and a body with content.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Notes</title>
+</head>
+<body>
+    <h1>My Notes</h1>
+    <p>Welcome to the notes page.</p>
+</body>
+</html>
+```
+
+## CSS: centering
+
+A common way to center content is flexbox on the parent element.
+
+```css
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+```
+
+## SQL: select
+
+SQL reads rows with a select statement. The where clause filters rows.
+
+```sql
+SELECT title, body FROM notes WHERE done = 0;
+```
+
+Example result: the unfinished notes with their titles and bodies.
+
+## SQL: insert
+
+An insert statement adds a row to a table.
+
+```sql
+INSERT INTO notes (title, body, done) VALUES ('shopping', 'buy rice', 0);
+```
+
+## SQL: update
+
+An update statement changes existing rows that match the where clause.
+
+```sql
+UPDATE notes SET done = 1 WHERE title = 'shopping';
+```
+
+## SQL: delete
+
+A delete statement removes matching rows. Always check the where clause before running it.
+
+```sql
+DELETE FROM notes WHERE done = 1;
+```
+
+## Shell: listing files
+
+The `ls` command lists files. Use `ls -l` for details and `ls -a` to include hidden files.
+
+```bash
+ls -l
+```
+
+## Shell: counting lines
+
+The `wc` command counts lines, words and characters. `wc -l` counts lines.
+
+```bash
+wc -l notes.txt
+```
+
+## Shell: finding text
+
+The `grep` command searches inside files. `grep -r "todo" .` searches the current folder recursively.
+
+```bash
+grep -r "todo" .
+```
+
+## Config: JSON example
+
+JSON stores structured data with objects, arrays, strings, numbers and booleans.
+
+```json
+{
+    "name": "nexus",
+    "version": 1,
+    "offline": true,
+    "features": ["chat", "memory"]
+}
+```
+
+## Config: key-value example
+
+Simple configuration files often use `key = value` lines, with comments starting from a hash.
+
+```ini
+# storage settings
+max_cache_mb = 512
+allow_web_research = false
+```

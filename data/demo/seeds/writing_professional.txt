@@ -1,0 +1,108 @@
+Professional email and letter writing examples
+Provenance: authored by the NEXUS-500M project for training demonstration. License: MIT (project).
+
+## Email: welcoming a new team member
+
+Subject: Welcome to the team
+
+Dear Amina,
+
+Welcome to the team. We are very happy to have you join us as a software engineer. Your first week will focus on meeting your colleagues and setting up your development environment, so there is no pressure to deliver features immediately.
+
+If anything is unclear, please ask. Everyone here remembers their own first week, and we would rather answer many questions than leave you stuck.
+
+Best regards,
+Bilal
+
+## Email: meeting reminder
+
+Subject: Reminder - project review tomorrow at 10:00
+
+Dear all,
+
+This is a friendly reminder that our project review takes place tomorrow at 10:00 in the main meeting room. We will discuss the current progress, the open risks, and the plan for next month.
+
+Please come prepared with a short update from your area. The meeting should take about one hour.
+
+Kind regards,
+Sara
+
+## Email: apologizing for a delayed reply
+
+Subject: Apologies for the late response
+
+Dear Mr. Khan,
+
+Thank you for your message, and please accept my apologies for the delayed reply. The past week involved an unexpected system migration, and your email waited longer than it should have.
+
+To answer your question: the report will be ready by Friday, and I will send it to you directly.
+
+With best regards,
+Usman
+
+## Email: requesting information
+
+Subject: Request for details about the storage upgrade
+
+Dear support team,
+
+Could you please send me the pricing and the delivery time for the storage upgrade we discussed last month? We would like to finish our planning before the end of the quarter.
+
+If it is easier, I am also available for a short call this week.
+
+Sincerely,
+Fatima
+
+## Email: informing about a schedule change
+
+Dear colleagues,
+
+Please note that the weekly sync moves from Monday to Wednesday, starting next week. The time stays the same at 14:00. The change is permanent and was agreed with the management team.
+
+Thank you for your flexibility.
+
+Best regards,
+The project office
+
+## Letter: formal complaint
+
+Dear Sir or Madam,
+
+I am writing about the internet service at my home, which has been unstable for the past three weeks. The connection drops several times per day, which makes it impossible to attend video meetings.
+
+I have restarted the router many times, as suggested on your website, but the problem continues. I would appreciate it if a technician could visit and check the line.
+
+I look forward to your reply within one week.
+
+Yours faithfully,
+Daniyal Ahmed
+
+## Letter: job application
+
+Dear Hiring Manager,
+
+I am applying for the position of junior Android developer. I have two years of experience building small applications with Kotlin, and I enjoy writing clear, well-tested code.
+
+In my current role I implemented a note-taking app with offline storage, which more than five thousand people use every month. I believe I can bring the same care for detail to your team.
+
+I have attached my resume and would be glad to talk in an interview.
+
+Sincerely,
+Zara Malik
+
+## Report paragraph: weekly status
+
+This week the team completed the chat interface and started work on the memory feature. Two defects were found in the message search and both were fixed within a day. The main risk remains the integration with the storage layer, which will be tested next week. Overall, the project stays on schedule.
+
+## Report paragraph: incident summary
+
+On Tuesday at 09:14 the service stopped responding for twelve minutes. The cause was a full disk on one server, which made the database reject new writes. The monitoring alert arrived at 09:16, the disk was cleaned at 09:22, and normal operation returned at 09:26. To prevent repetition, we added an automatic cleanup job and a disk usage warning at eighty percent.
+
+## Technical note: writing clearly
+
+Good technical writing is short, precise and honest. Prefer short sentences. Prefer common words over impressive ones. When you describe a process, describe it in the order the steps happen. When you make a claim, add the evidence next to the claim.
+
+## Meeting minutes
+
+Present: Amina, Bilal, Sara.
+Amina opened the meeting at 10:00 and shared the release plan. Bilal reported that the build pipeline is stable. Sara asked for one more day to finish the design review, and the team agreed. The meeting closed at 10:35. Next meeting: Monday 10:00.

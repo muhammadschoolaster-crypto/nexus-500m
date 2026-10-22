@@ -1,0 +1,62 @@
+Knowledge and explanation texts about everyday technology
+Provenance: authored by the NEXUS-500M project for training demonstration. License: MIT (project).
+
+## What is a computer file
+
+A file is a named container of information stored on a computer. Files can hold text, images, sound, programs or any other kind of data. Every file has a name, and most systems also record its size and the time it was last changed. Files live inside folders, which are themselves stored on a disk or other storage device.
+
+## Why backups matter
+
+A backup is a second copy of your files kept in a different place than the original. If the original is lost because of a broken disk, a mistake or a virus, the backup can bring it back. A good backup habit is to copy important files to another device or an online service regularly, and to check sometimes that the backup can actually be opened.
+
+## What is a reminder
+
+A reminder is a small note attached to a time. When the time arrives, the device shows a message so you do not forget the task. Reminders help people keep appointments, take medicine on time, or remember to reply to a message later.
+
+## What is a calendar
+
+A calendar is a system for organizing days. People mark meetings and events on a calendar so that they can see what is coming and avoid planning two things at the same hour. Digital calendars can remind the user before an event starts.
+
+## What is a to-do list
+
+A to-do list is a list of tasks a person wants to finish. Writing tasks down lowers the chance of forgetting them, and finishing an item feels good, which encourages more work. A useful to-do list keeps tasks small enough to finish in one sitting.
+
+## How a calculator works
+
+A calculator takes an expression like two plus three and follows rules to find the result. First it reads the numbers and the operators. Then it applies the order of operations, multiplication before addition for example, and computes the result step by step until one number remains.
+
+## What is offline software
+
+Offline software works without an internet connection. All the data and the logic it needs live on the device itself. Offline software keeps working in places without network coverage, and it can be more private because the data never leaves the device.
+
+## What is an offline AI assistant
+
+An offline AI assistant is a program that answers questions and helps with tasks using a built-in language model, without sending anything to the internet. The model is a file on the device, like a very complicated set of rules learned from examples. The assistant can chat, help write, and remember useful things, and it keeps working on a plane or anywhere without signal.
+
+## What is a language model
+
+A language model is a program that predicts the next piece of text given the text so far. Modern language models are neural networks with many parameters, trained on large amounts of text until their predictions become useful. When the model is used to write, it picks one piece at a time, adding each new piece to the text and predicting again.
+
+## What is memory in an assistant
+
+Memory in an assistant means keeping useful facts between conversations. For example, if you tell the assistant the name of your project once, it can remember that name for next time. Good memory is under the user's control: you can look at it, correct it, delete it, or turn it off.
+
+## What is a small model
+
+A small language model has far fewer parameters than the largest models, so it is faster and can run on a phone. A small model cannot know everything, but for simple tasks and personal notes it can still be helpful. Small models are often the right choice when privacy and offline work matter more than broad knowledge.
+
+## Why phones have limited storage
+
+A phone stores files in a fixed amount of built-in storage, for example 128 gigabytes. Apps, photos and models all share that space, so the phone can run out if too much is kept. Software cannot create more physical space; it can only help you use the space wisely, by cleaning caches and letting you remove large files you no longer need.
+
+## What is a checksum
+
+A checksum is a short fingerprint computed from a file. If even one byte of the file changes, the checksum changes too. Downloads often come with a checksum so the receiver can verify that the file arrived exactly as the sender shipped it.
+
+## What is software testing
+
+Software testing checks that a program behaves as intended. Unit tests check small parts in isolation. Integration tests check that the parts work together. Tests do not prove that software has no defects, but they catch many mistakes early, when fixing them is cheapest.
+
+## What is a battery-friendly app
+
+A battery-friendly app avoids unnecessary work. It does not keep the processor busy when the screen is closed, it batches network requests instead of making many small ones, and it uses the system's background tools instead of its own always-on loops.

@@ -1,0 +1,271 @@
+# Python coding examples with explanations
+# Provenance: authored by the NEXUS-500M project for training demonstration. License: MIT (project).
+
+## Function: add
+
+The function `add` takes two numbers and returns their sum. In Python, addition uses the `+` operator.
+
+```python
+def add(a, b):
+    return a + b
+```
+
+Example: `add(2, 3)` returns `5`. Example: `add(-1, 1)` returns `0`.
+
+## Function: sub
+
+The function `sub` takes two numbers and returns the difference between the first and the second. In Python, subtraction uses the `-` operator.
+
+```python
+def sub(a, b):
+    return a - b
+```
+
+Example: `sub(5, 3)` returns `2`. Example: `sub(3, 5)` returns `-2`.
+
+## Function: mul
+
+The function `mul` takes two numbers and returns their product. In Python, multiplication uses the `*` operator.
+
+```python
+def mul(a, b):
+    return a * b
+```
+
+Example: `mul(4, 6)` returns `24`. Example: `mul(0, 9)` returns `0`.
+
+## Function: div
+
+The function `safe_div` takes two numbers and returns the division of the first by the second. If the second number is zero, the function returns `None` instead of raising an error. In Python, division uses the `/` operator.
+
+```python
+def safe_div(a, b):
+    if b == 0:
+        return None
+    return a / b
+```
+
+Example: `safe_div(10, 2)` returns `5.0`. Example: `safe_div(1, 0)` returns `None`.
+
+## Function: is_even
+
+The function `is_even` takes a number and returns `True` when the number is even, `False` when it is odd. It uses the modulo operator `%`. A number is even when the remainder of division by two is zero.
+
+```python
+def is_even(n):
+    return n % 2 == 0
+```
+
+Example: `is_even(4)` returns `True`. Example: `is_even(7)` returns `False`.
+
+## Function: is_odd
+
+The function `is_odd` takes a number and returns `True` when the number is odd, `False` when it is even. A number is odd when the remainder of division by two is one. Negative numbers can be odd too.
+
+```python
+def is_odd(n):
+    return n % 2 != 0
+```
+
+Example: `is_odd(3)` returns `True`. Example: `is_odd(8)` returns `False`.
+
+## Function: greet
+
+The function `greet` takes no arguments and returns the string `Hello, World`. String literals in Python are written between single or double quotes.
+
+```python
+def greet():
+    return "Hello, World"
+```
+
+Example: `greet()` returns `Hello, World`.
+
+## Function: greet_name
+
+The function `greet_name` takes a name and returns a friendly greeting that includes the name. String formatting in Python can use f-strings, for example `f"Hello, {name}"`.
+
+```python
+def greet_name(name):
+    return f"Hello, {name}"
+```
+
+Example: `greet_name("Ali")` returns `Hello, Ali`.
+
+## Function: repeat_text
+
+The function `repeat_text` takes a string and a count and returns the string repeated count times. Python strings support repetition with the `*` operator.
+
+```python
+def repeat_text(text, count):
+    return text * count
+```
+
+Example: `repeat_text("ab", 3)` returns `ababab`.
+
+## Function: count_words
+
+The function `count_words` takes a sentence and returns how many words it contains. The sentence is split on whitespace using `split()`, and the number of parts is returned with `len`.
+
+```python
+def count_words(sentence):
+    return len(sentence.split())
+```
+
+Example: `count_words("the quick brown fox")` returns `4`.
+
+## Function: reverse_string
+
+The function `reverse_string` takes a string and returns the same string backwards. Python slicing with a step of `-1` reverses a sequence.
+
+```python
+def reverse_string(s):
+    return s[::-1]
+```
+
+Example: `reverse_string("nexus")` returns `suxen`.
+
+## Function: max_of_list
+
+The function `max_of_list` takes a list of numbers and returns the largest one. Python has a built-in `max` function, but here we write it with a loop to show the pattern.
+
+```python
+def max_of_list(items):
+    best = items[0]
+    for x in items:
+        if x > best:
+            best = x
+    return best
+```
+
+Example: `max_of_list([3, 9, 2])` returns `9`.
+
+## Function: sum_of_list
+
+The function `sum_of_list` takes a list of numbers and returns their total. It walks over the list with a for loop and keeps a running total.
+
+```python
+def sum_of_list(items):
+    total = 0
+    for x in items:
+        total = total + x
+    return total
+```
+
+Example: `sum_of_list([1, 2, 3])` returns `6`.
+
+## Loops
+
+A for loop repeats work for every item in a sequence. To print the numbers from 1 to 3, use `range`.
+
+```python
+for i in range(1, 4):
+    print(i)
+```
+
+This prints `1`, then `2`, then `3`.
+
+## While loop
+
+A while loop repeats as long as a condition is true. Always make sure the condition can become false, or the loop runs forever.
+
+```python
+count = 0
+while count < 3:
+    print(count)
+    count = count + 1
+```
+
+This prints `0`, `1`, `2` and then stops.
+
+## If, elif, else
+
+Conditional logic picks a branch based on a test. The first true branch wins.
+
+```python
+def describe(n):
+    if n > 0:
+        return "positive"
+    elif n < 0:
+        return "negative"
+    else:
+        return "zero"
+```
+
+Example: `describe(5)` returns `positive`.
+
+## Unit tests
+
+Unit tests check that functions behave as expected. The `unittest` module is part of Python.
+
+```python
+import unittest
+
+class TestAdd(unittest.TestCase):
+    def test_add_positives(self):
+        self.assertEqual(add(2, 3), 5)
+    def test_add_zero(self):
+        self.assertEqual(add(0, 0), 0)
+
+if __name__ == "__main__":
+    unittest.main()
+```
+
+Run the tests with `python -m unittest`.
+
+## Bug fix example
+
+Buggy version: `def broken_max(items): return items[1]` — this returns the second element instead of the maximum. The fix is to compare every element and keep the best one.
+
+```python
+def fixed_max(items):
+    best = items[0]
+    for x in items:
+        if x > best:
+            best = x
+    return best
+```
+
+The lesson: read the function purpose again, then check each line against that purpose.
+
+## Dictionary example
+
+A dictionary stores key and value pairs. Access a value with its key inside square brackets.
+
+```python
+ages = {"amina": 30, "bilal": 25}
+print(ages["amina"])
+```
+
+This prints `30`. Add a new pair with `ages["cinar"] = 41`.
+
+## File reading example
+
+Reading a text file safely uses a `with` block, which closes the file automatically.
+
+```python
+with open("notes.txt", "r", encoding="utf-8") as f:
+    content = f.read()
+print(len(content))
+```
+
+## List comprehension
+
+A list comprehension builds a list in one line: `squares = [x * x for x in range(5)]` gives `[0, 1, 4, 9, 16]`.
+
+```python
+squares = [x * x for x in range(5)]
+```
+
+## Error handling
+
+Error handling uses try and except. Catch only the errors you expect, so real bugs are not hidden.
+
+```python
+def to_int(text):
+    try:
+        return int(text)
+    except ValueError:
+        return None
+```
+
+Example: `to_int("42")` returns `42`. Example: `to_int("hello")` returns `None`.

@@ -1,0 +1,6 @@
+# Core dependencies (PyTorch is installed separately to force the CPU wheel:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+# The default PyPI wheel on Linux bundles CUDA and is ~2.5 GB; the CPU wheel
+# is ~200 MB and fully sufficient for this project's training scale.)
+numpy>=1.26
+pytest>=8.0

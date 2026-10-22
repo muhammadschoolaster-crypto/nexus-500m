@@ -1,0 +1,68 @@
+{
+  "nexus_500m": {
+    "config": {
+      "name": "nexus_500m",
+      "vocab_size": 32768,
+      "d_model": 1760,
+      "n_layers": 12,
+      "n_heads": 16,
+      "d_ff": 7040,
+      "ctx_len": 2048,
+      "dropout": 0.0,
+      "tie_embeddings": true
+    },
+    "total_parameters": 507418560,
+    "total_million": 507.419,
+    "by_component": {
+      "token_embeddings": 57671680,
+      "position_embeddings": 3604480,
+      "attention": 148684800,
+      "mlp": 297369600,
+      "layernorms": 84480
+    }
+  },
+  "nexus_demo": {
+    "config": {
+      "name": "nexus_demo",
+      "vocab_size": 2048,
+      "d_model": 128,
+      "n_layers": 3,
+      "n_heads": 4,
+      "d_ff": 512,
+      "ctx_len": 256,
+      "dropout": 0.0,
+      "tie_embeddings": true
+    },
+    "total_parameters": 886528,
+    "total_million": 0.887,
+    "by_component": {
+      "token_embeddings": 262144,
+      "position_embeddings": 32768,
+      "attention": 196608,
+      "mlp": 393216,
+      "layernorms": 1536
+    }
+  },
+  "nexus_smoke": {
+    "config": {
+      "name": "nexus_smoke",
+      "vocab_size": 257,
+      "d_model": 64,
+      "n_layers": 2,
+      "n_heads": 4,
+      "d_ff": 256,
+      "ctx_len": 64,
+      "dropout": 0.0,
+      "tie_embeddings": true
+    },
+    "total_parameters": 119488,
+    "total_million": 0.119,
+    "by_component": {
+      "token_embeddings": 16448,
+      "position_embeddings": 4096,
+      "attention": 32768,
+      "mlp": 65536,
+      "layernorms": 512
+    }
+  }
+}

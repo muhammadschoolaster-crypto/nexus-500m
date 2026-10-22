@@ -1,0 +1,179 @@
+# Kotlin and Java coding examples for Android development
+# Provenance: authored by the NEXUS-500M project for training demonstration. License: MIT (project).
+
+## Kotlin: variables
+
+In Kotlin, `val` declares a read-only variable and `var` declares a changeable one. Prefer `val` whenever possible.
+
+```kotlin
+val answer = 42
+var count = 0
+count = count + 1
+```
+
+Example: after these lines, `answer` is `42` and `count` is `1`.
+
+## Kotlin: functions
+
+A Kotlin function is declared with the `fun` keyword. The last expression is the return value when written without braces.
+
+```kotlin
+fun add(a: Int, b: Int): Int {
+    return a + b
+}
+
+fun square(x: Int) = x * x
+```
+
+Example: `add(2, 3)` returns `5`. Example: `square(4)` returns `16`.
+
+## Kotlin: string templates
+
+Kotlin strings support templates with the dollar sign. `"$name"` inserts a value, and `"${a + b}"` inserts an expression.
+
+```kotlin
+val name = "Amina"
+val greeting = "Hello, $name"
+```
+
+Example: `greeting` is `Hello, Amina`.
+
+## Kotlin: lists
+
+Lists in Kotlin can be read-only with `listOf` or changeable with `mutableListOf`. Iterate a list with a for loop.
+
+```kotlin
+val fruits = listOf("apple", "mango", "plum")
+for (fruit in fruits) {
+    println(fruit)
+}
+```
+
+This prints `apple`, then `mango`, then `plum`.
+
+## Kotlin: null safety
+
+Kotlin separates nullable types with a question mark. The safe call operator `?.` runs the call only when the value is not null.
+
+```kotlin
+fun lengthOrNull(s: String?): Int? {
+    return s?.length
+}
+```
+
+Example: `lengthOrNull("hi")` returns `2`. Example: `lengthOrNull(null)` returns `null`.
+
+## Kotlin: data classes
+
+A data class automatically provides equals, hashCode, toString and copy. It is the right choice for simple value holders.
+
+```kotlin
+data class Note(val title: String, val body: String)
+val n = Note("shopping", "buy milk and rice")
+println(n.title)
+```
+
+This prints `shopping`.
+
+## Kotlin: when expression
+
+The `when` expression replaces long if chains and can be used as a value.
+
+```kotlin
+fun describe(n: Int): String {
+    return when {
+        n > 0 -> "positive"
+        n < 0 -> "negative"
+        else -> "zero"
+    }
+}
+```
+
+Example: `describe(-2)` returns `negative`.
+
+## Kotlin: classes
+
+A simple class with a primary constructor and an initialized property.
+
+```kotlin
+class Counter(start: Int) {
+    var value = start
+    fun increment() {
+        value = value + 1
+    }
+}
+```
+
+Example: `Counter(5).increment()` leaves `value` equal to `6`.
+
+## Java: hello world
+
+Java programs start from a main method inside a class.
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World");
+    }
+}
+```
+
+## Java: method example
+
+A Java method with two integer parameters and an integer return type.
+
+```java
+public static int add(int a, int b) {
+    return a + b;
+}
+```
+
+Example: `add(2, 3)` returns `5`.
+
+## Android: activity basics
+
+An Activity is one screen of an Android app. With Jetpack Compose, the activity sets its content with `setContent`.
+
+```kotlin
+class MainActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContent {
+            MyApp()
+        }
+    }
+}
+```
+
+## Android: composable function
+
+A composable function describes UI. It is marked with the `@Composable` annotation.
+
+```kotlin
+@Composable
+fun Greeting(name: String) {
+    Text(text = "Hello, $name")
+}
+```
+
+## Android: remember state
+
+Compose state is created with `remember` and `mutableStateOf`. Changing the value makes the UI redraw.
+
+```kotlin
+@Composable
+fun CounterButton() {
+    var count by remember { mutableStateOf(0) }
+    Button(onClick = { count = count + 1 }) {
+        Text("tapped $count times")
+    }
+}
+```
+
+## Android: ViewModel purpose
+
+A ViewModel holds data that survives configuration changes such as screen rotation. Put app data and logic in the ViewModel, and keep composables mostly for drawing.
+
+## Android: WorkManager purpose
+
+WorkManager schedules deferrable background work that survives app restarts and reboots. It is the recommended tool for periodic or delayed tasks on modern Android.
