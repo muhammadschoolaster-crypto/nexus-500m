@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NEXUS Assistant</string>
+    <string name="new_chat">New chat</string>
+    <string name="search_title">Search conversations</string>
+    <string name="memories_title">Memories</string>
+    <string name="model_info_title">Model info</string>
+    <string name="send">Send</string>
+    <string name="mode_chat">Chat</string>
+    <string name="mode_code">Code</string>
+    <string name="mode_write">Write</string>
+    <string name="input_hint">Message NEXUS… (try: remember: my name is Ali)</string>
+    <string name="loading_model">Loading offline model…</string>
+    <string name="model_load_failed">Model failed to load. Check assets and restart.</string>
+    <string name="model_not_ready">Model is still loading. Please wait.</string>
+    <string name="generating">Generating on-device…</string>
+    <string name="ready_status">%1$s online · %2$,d params · offline</string>
+    <string name="welcome_message">Hi! I am NEXUS, an offline assistant. Everything I generate happens on this device. Try: \'remember: my favorite language is Kotlin\', or pick a mode above.</string>
+    <string name="memory_saved">Saved to memory: %1$s</string>
+    <string name="empty_reply">(model returned empty - try a longer prompt)</string>
+    <string name="model_info_body">Name: %1$s\nParameters: %2$,d\nVocabulary: %3$,d tokens\nContext window: %4$d tokens\n\nEngine: pure Kotlin transformer inference, fp32, no native libs, no network.</string>
+    <string name="export">Export data</string>
+    <string name="exported_to">Memory export saved to app files:\n%1$s</string>
+    <string name="delete_memory_q">Delete this memory?</string>
+    <string name="wipe_all">Wipe all data</string>
+    <string name="wipe_confirm">Really delete ALL conversations and memories?</string>
+    <string name="no_memories">No saved memories yet. Type \'remember: …\' in chat to save one.</string>
+    <string name="search_results">%1$d results</string>
+</resources>

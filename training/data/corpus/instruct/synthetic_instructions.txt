@@ -1,0 +1,1000 @@
+### Instruction:
+Write a short professional email to schedule a meeting with a client.
+### Input:
+Client: Dana Cole. Topic: Q3 roadmap review.
+### Response:
+Subject: Q3 Roadmap Review - Meeting Request
+
+Dear Ms. Cole,
+
+I hope this message finds you well. I would like to schedule a brief meeting to walk through our Q3 roadmap and gather your feedback on the proposed priorities.
+
+Would Tuesday or Thursday next week work for you? I am happy to accommodate your schedule and can prepare an agenda in advance.
+
+Best regards,
+Alex
+<|end|>
+### Instruction:
+Write a Python function that reverses a string without slicing.
+### Input:
+reverse('nexus')
+### Response:
+def reverse(s: str) -> str:
+    result = []
+    for ch in s:
+        result.insert(0, ch)
+    return ''.join(result)
+
+print(reverse('nexus'))  # 'suxen'
+<|end|>
+### Instruction:
+Summarize the following sentence in plain words.
+### Input:
+The mechanism halts oscillation of the shaft when rotational speed exceeds tolerance.
+### Response:
+The device stops the shaft from shaking when it spins too fast.
+<|end|>
+### Instruction:
+Debug this Python snippet.
+### Input:
+def add(a b): return a + b
+### Response:
+The function definition is missing a comma between parameters. Fixed:
+def add(a, b):
+    return a + b
+<|end|>
+### Instruction:
+Write a bash one-liner to count lines in all .py files under the current folder.
+### Input:
+
+### Response:
+find . -name '*.py' -type f -exec cat {} + | wc -l
+<|end|>
+### Instruction:
+Write a SQL query selecting users created after 2024 ordered by name.
+### Input:
+table: users(id, name, created_at)
+### Response:
+SELECT id, name, created_at FROM users
+WHERE created_at > '2024-01-01'
+ORDER BY name;
+<|end|>
+### Instruction:
+Write a friendly thank-you note to a colleague who helped with a launch.
+### Input:
+Colleague: Priya. Launch: new offline AI assistant app.
+### Response:
+Hi Priya,
+
+Thank you so much for the extra hours you put into the launch of our offline assistant. Your calm handling of the release checklist kept the whole team on track, and the app shipped without a single critical issue.
+
+I am grateful to have you on this team.
+
+Warmly,
+Sam
+<|end|>
+### Instruction:
+Explain what a transformer attention head does in one sentence for a beginner.
+### Input:
+
+### Response:
+An attention head looks at every word in the sentence and decides which other words it should gather information from before updating its own meaning.
+<|end|>
+### Instruction:
+Refactor this JavaScript to use const.
+### Input:
+var x = 5; var y = x * 2;
+### Response:
+const x = 5;
+const y = x * 2;
+<|end|>
+### Instruction:
+Write a Kotlin function checking if a string is a palindrome.
+### Input:
+
+### Response:
+fun isPalindrome(s: String): Boolean {
+    val t = s.filter { it.isLetterOrDigit() }.lowercase()
+    return t == t.reversed()
+}
+<|end|>
+### Instruction:
+Complete the sentence with a sensible continuation.
+### Input:
+The little robot booted its offline language model and
+### Response:
+ waited patiently for its owner to type the first message of the day.
+<|end|>
+### Instruction:
+Answer the user question directly and briefly.
+### Input:
+Can you work without internet?
+### Response:
+Yes. Everything I use to reply runs locally on this device, including the language model and your stored memories.
+<|end|>
+### Instruction:
+Generate a unit test for a Python adder.
+### Input:
+def add(a, b): return a + b
+### Response:
+import unittest
+from mymod import add
+
+class TestAdd(unittest.TestCase):
+    def test_add(self):
+        self.assertEqual(add(2, 3), 5)
+        self.assertEqual(add(-1, 1), 0)
+
+if __name__ == '__main__':
+    unittest.main()
+<|end|>
+### Instruction:
+Complete the sentence with a sensible continuation.
+### Input:
+The little robot booted its offline language model and
+### Response:
+ waited patiently for its owner to type the first message of the day.
+<|end|>
+### Instruction:
+Answer the user question directly and briefly.
+### Input:
+Can you work without internet?
+### Response:
+Yes. Everything I use to reply runs locally on this device, including the language model and your stored memories.
+<|end|>
+### Instruction:
+Generate a unit test for a Python adder.
+### Input:
+def add(a, b): return a + b
+### Response:
+import unittest
+from mymod import add
+
+class TestAdd(unittest.TestCase):
+    def test_add(self):
+        self.assertEqual(add(2, 3), 5)
+        self.assertEqual(add(-1, 1), 0)
+
+if __name__ == '__main__':
+    unittest.main()
+<|end|>
+### Instruction:
+Complete the sentence with a sensible continuation.
+### Input:
+The little robot booted its offline language model and
+### Response:
+ waited patiently for its owner to type the first message of the day.
+<|end|>
+### Instruction:
+Answer the user question directly and briefly.
+### Input:
+Can you work without internet?
+### Response:
+Yes. Everything I use to reply runs locally on this device, including the language model and your stored memories.
+<|end|>
+### Instruction:
+Generate a unit test for a Python adder.
+### Input:
+def add(a, b): return a + b
+### Response:
+import unittest
+from mymod import add
+
+class TestAdd(unittest.TestCase):
+    def test_add(self):
+        self.assertEqual(add(2, 3), 5)
+        self.assertEqual(add(-1, 1), 0)
+
+if __name__ == '__main__':
+    unittest.main()
+<|end|>
+### Instruction:
+Complete the sentence with a sensible continuation.
+### Input:
+The little robot booted its offline language model and
+### Response:
+ waited patiently for its owner to type the first message of the day.
+<|end|>
+### Instruction:
+Answer the user question directly and briefly.
+### Input:
+Can you work without internet?
+### Response:
+Yes. Everything I use to reply runs locally on this device, including the language model and your stored memories.
+<|end|>
+### Instruction:
+Generate a unit test for a Python adder.
+### Input:
+def add(a, b): return a + b
+### Response:
+import unittest
+from mymod import add
+
+class TestAdd(unittest.TestCase):
+    def test_add(self):
+        self.assertEqual(add(2, 3), 5)
+        self.assertEqual(add(-1, 1), 0)
+
+if __name__ == '__main__':
+    unittest.main()
+<|end|>
+### Instruction:
+Complete the sentence with a sensible continuation.
+### Input:
+The little robot booted its offline language model and
+### Response:
+ waited patiently for its owner to type the first message of the day.
+<|end|>
+### Instruction:
+Answer the user question directly and briefly.
+### Input:
+Can you work without internet?
+### Response:
+Yes. Everything I use to reply runs locally on this device, including the language model and your stored memories.
+<|end|>
+### Instruction:
+Generate a unit test for a Python adder.
+### Input:
+def add(a, b): return a + b
+### Response:
+import unittest
+from mymod import add
+
+class TestAdd(unittest.TestCase):
+    def test_add(self):
+        self.assertEqual(add(2, 3), 5)
+        self.assertEqual(add(-1, 1), 0)
+
+if __name__ == '__main__':
+    unittest.main()
+<|end|>
+### Instruction:
+Complete the sentence with a sensible continuation.
+### Input:
+The little robot booted its offline language model and
+### Response:
+ waited patiently for its owner to type the first message of the day.
+<|end|>
+### Instruction:
+Answer the user question directly and briefly.
+### Input:
+Can you work without internet?
+### Response:
+Yes. Everything I use to reply runs locally on this device, including the language model and your stored memories.
+<|end|>
+### Instruction:
+Generate a unit test for a Python adder.
+### Input:
+def add(a, b): return a + b
+### Response:
+import unittest
+from mymod import add
+
+class TestAdd(unittest.TestCase):
+    def test_add(self):
+        self.assertEqual(add(2, 3), 5)
+        self.assertEqual(add(-1, 1), 0)
+
+if __name__ == '__main__':
+    unittest.main()
+<|end|>
+### Instruction:
+Complete the sentence with a sensible continuation.
+### Input:
+The little robot booted its offline language model and
+### Response:
+ waited patiently for its owner to type the first message of the day.
+<|end|>
+### Instruction:
+Answer the user question directly and briefly.
+### Input:
+Can you work without internet?
+### Response:
+Yes. Everything I use to reply runs locally on this device, including the language model and your stored memories.
+<|end|>
+### Instruction:
+Generate a unit test for a Python adder.
+### Input:
+def add(a, b): return a + b
+### Response:
+import unittest
+from mymod import add
+
+class TestAdd(unittest.TestCase):
+    def test_add(self):
+        self.assertEqual(add(2, 3), 5)
+        self.assertEqual(add(-1, 1), 0)
+
+if __name__ == '__main__':
+    unittest.main()
+<|end|>
+### Instruction:
+Complete the sentence with a sensible continuation.
+### Input:
+The little robot booted its offline language model and
+### Response:
+ waited patiently for its owner to type the first message of the day.
+<|end|>
+### Instruction:
+Answer the user question directly and briefly.
+### Input:
+Can you work without internet?
+### Response:
+Yes. Everything I use to reply runs locally on this device, including the language model and your stored memories.
+<|end|>
+### Instruction:
+Generate a unit test for a Python adder.
+### Input:
+def add(a, b): return a + b
+### Response:
+import unittest
+from mymod import add
+
+class TestAdd(unittest.TestCase):
+    def test_add(self):
+        self.assertEqual(add(2, 3), 5)
+        self.assertEqual(add(-1, 1), 0)
+
+if __name__ == '__main__':
+    unittest.main()
+<|end|>
+### Instruction:
+Complete the sentence with a sensible continuation.
+### Input:
+The little robot booted its offline language model and
+### Response:
+ waited patiently for its owner to type the first message of the day.
+<|end|>
+### Instruction:
+Answer the user question directly and briefly.
+### Input:
+Can you work without internet?
+### Response:
+Yes. Everything I use to reply runs locally on this device, including the language model and your stored memories.
+<|end|>
+### Instruction:
+Generate a unit test for a Python adder.
+### Input:
+def add(a, b): return a + b
+### Response:
+import unittest
+from mymod import add
+
+class TestAdd(unittest.TestCase):
+    def test_add(self):
+        self.assertEqual(add(2, 3), 5)
+        self.assertEqual(add(-1, 1), 0)
+
+if __name__ == '__main__':
+    unittest.main()
+<|end|>
+### Instruction:
+Complete the sentence with a sensible continuation.
+### Input:
+The little robot booted its offline language model and
+### Response:
+ waited patiently for its owner to type the first message of the day.
+<|end|>
+### Instruction:
+Answer the user question directly and briefly.
+### Input:
+Can you work without internet?
+### Response:
+Yes. Everything I use to reply runs locally on this device, including the language model and your stored memories.
+<|end|>
+### Instruction:
+Generate a unit test for a Python adder.
+### Input:
+def add(a, b): return a + b
+### Response:
+import unittest
+from mymod import add
+
+class TestAdd(unittest.TestCase):
+    def test_add(self):
+        self.assertEqual(add(2, 3), 5)
+        self.assertEqual(add(-1, 1), 0)
+
+if __name__ == '__main__':
+    unittest.main()
+<|end|>
+### Instruction:
+Complete the sentence with a sensible continuation.
+### Input:
+The little robot booted its offline language model and
+### Response:
+ waited patiently for its owner to type the first message of the day.
+<|end|>
+### Instruction:
+Answer the user question directly and briefly.
+### Input:
+Can you work without internet?
+### Response:
+Yes. Everything I use to reply runs locally on this device, including the language model and your stored memories.
+<|end|>
+### Instruction:
+Generate a unit test for a Python adder.
+### Input:
+def add(a, b): return a + b
+### Response:
+import unittest
+from mymod import add
+
+class TestAdd(unittest.TestCase):
+    def test_add(self):
+        self.assertEqual(add(2, 3), 5)
+        self.assertEqual(add(-1, 1), 0)
+
+if __name__ == '__main__':
+    unittest.main()
+<|end|>
+### Instruction:
+Complete the sentence with a sensible continuation.
+### Input:
+The little robot booted its offline language model and
+### Response:
+ waited patiently for its owner to type the first message of the day.
+<|end|>
+### Instruction:
+Answer the user question directly and briefly.
+### Input:
+Can you work without internet?
+### Response:
+Yes. Everything I use to reply runs locally on this device, including the language model and your stored memories.
+<|end|>
+### Instruction:
+Generate a unit test for a Python adder.
+### Input:
+def add(a, b): return a + b
+### Response:
+import unittest
+from mymod import add
+
+class TestAdd(unittest.TestCase):
+    def test_add(self):
+        self.assertEqual(add(2, 3), 5)
+        self.assertEqual(add(-1, 1), 0)
+
+if __name__ == '__main__':
+    unittest.main()
+<|end|>
+### Instruction:
+Complete the sentence with a sensible continuation.
+### Input:
+The little robot booted its offline language model and
+### Response:
+ waited patiently for its owner to type the first message of the day.
+<|end|>
+### Instruction:
+Answer the user question directly and briefly.
+### Input:
+Can you work without internet?
+### Response:
+Yes. Everything I use to reply runs locally on this device, including the language model and your stored memories.
+<|end|>
+### Instruction:
+Generate a unit test for a Python adder.
+### Input:
+def add(a, b): return a + b
+### Response:
+import unittest
+from mymod import add
+
+class TestAdd(unittest.TestCase):
+    def test_add(self):
+        self.assertEqual(add(2, 3), 5)
+        self.assertEqual(add(-1, 1), 0)
+
+if __name__ == '__main__':
+    unittest.main()
+<|end|>
+### Instruction:
+Complete the sentence with a sensible continuation.
+### Input:
+The little robot booted its offline language model and
+### Response:
+ waited patiently for its owner to type the first message of the day.
+<|end|>
+### Instruction:
+Answer the user question directly and briefly.
+### Input:
+Can you work without internet?
+### Response:
+Yes. Everything I use to reply runs locally on this device, including the language model and your stored memories.
+<|end|>
+### Instruction:
+Generate a unit test for a Python adder.
+### Input:
+def add(a, b): return a + b
+### Response:
+import unittest
+from mymod import add
+
+class TestAdd(unittest.TestCase):
+    def test_add(self):
+        self.assertEqual(add(2, 3), 5)
+        self.assertEqual(add(-1, 1), 0)
+
+if __name__ == '__main__':
+    unittest.main()
+<|end|>
+### Instruction:
+Complete the sentence with a sensible continuation.
+### Input:
+The little robot booted its offline language model and
+### Response:
+ waited patiently for its owner to type the first message of the day.
+<|end|>
+### Instruction:
+Answer the user question directly and briefly.
+### Input:
+Can you work without internet?
+### Response:
+Yes. Everything I use to reply runs locally on this device, including the language model and your stored memories.
+<|end|>
+### Instruction:
+Generate a unit test for a Python adder.
+### Input:
+def add(a, b): return a + b
+### Response:
+import unittest
+from mymod import add
+
+class TestAdd(unittest.TestCase):
+    def test_add(self):
+        self.assertEqual(add(2, 3), 5)
+        self.assertEqual(add(-1, 1), 0)
+
+if __name__ == '__main__':
+    unittest.main()
+<|end|>
+### Instruction:
+Complete the sentence with a sensible continuation.
+### Input:
+The little robot booted its offline language model and
+### Response:
+ waited patiently for its owner to type the first message of the day.
+<|end|>
+### Instruction:
+Answer the user question directly and briefly.
+### Input:
+Can you work without internet?
+### Response:
+Yes. Everything I use to reply runs locally on this device, including the language model and your stored memories.
+<|end|>
+### Instruction:
+Generate a unit test for a Python adder.
+### Input:
+def add(a, b): return a + b
+### Response:
+import unittest
+from mymod import add
+
+class TestAdd(unittest.TestCase):
+    def test_add(self):
+        self.assertEqual(add(2, 3), 5)
+        self.assertEqual(add(-1, 1), 0)
+
+if __name__ == '__main__':
+    unittest.main()
+<|end|>
+### Instruction:
+Complete the sentence with a sensible continuation.
+### Input:
+The little robot booted its offline language model and
+### Response:
+ waited patiently for its owner to type the first message of the day.
+<|end|>
+### Instruction:
+Answer the user question directly and briefly.
+### Input:
+Can you work without internet?
+### Response:
+Yes. Everything I use to reply runs locally on this device, including the language model and your stored memories.
+<|end|>
+### Instruction:
+Generate a unit test for a Python adder.
+### Input:
+def add(a, b): return a + b
+### Response:
+import unittest
+from mymod import add
+
+class TestAdd(unittest.TestCase):
+    def test_add(self):
+        self.assertEqual(add(2, 3), 5)
+        self.assertEqual(add(-1, 1), 0)
+
+if __name__ == '__main__':
+    unittest.main()
+<|end|>
+### Instruction:
+Complete the sentence with a sensible continuation.
+### Input:
+The little robot booted its offline language model and
+### Response:
+ waited patiently for its owner to type the first message of the day.
+<|end|>
+### Instruction:
+Answer the user question directly and briefly.
+### Input:
+Can you work without internet?
+### Response:
+Yes. Everything I use to reply runs locally on this device, including the language model and your stored memories.
+<|end|>
+### Instruction:
+Generate a unit test for a Python adder.
+### Input:
+def add(a, b): return a + b
+### Response:
+import unittest
+from mymod import add
+
+class TestAdd(unittest.TestCase):
+    def test_add(self):
+        self.assertEqual(add(2, 3), 5)
+        self.assertEqual(add(-1, 1), 0)
+
+if __name__ == '__main__':
+    unittest.main()
+<|end|>
+### Instruction:
+Complete the sentence with a sensible continuation.
+### Input:
+The little robot booted its offline language model and
+### Response:
+ waited patiently for its owner to type the first message of the day.
+<|end|>
+### Instruction:
+Answer the user question directly and briefly.
+### Input:
+Can you work without internet?
+### Response:
+Yes. Everything I use to reply runs locally on this device, including the language model and your stored memories.
+<|end|>
+### Instruction:
+Generate a unit test for a Python adder.
+### Input:
+def add(a, b): return a + b
+### Response:
+import unittest
+from mymod import add
+
+class TestAdd(unittest.TestCase):
+    def test_add(self):
+        self.assertEqual(add(2, 3), 5)
+        self.assertEqual(add(-1, 1), 0)
+
+if __name__ == '__main__':
+    unittest.main()
+<|end|>
+### Instruction:
+Complete the sentence with a sensible continuation.
+### Input:
+The little robot booted its offline language model and
+### Response:
+ waited patiently for its owner to type the first message of the day.
+<|end|>
+### Instruction:
+Answer the user question directly and briefly.
+### Input:
+Can you work without internet?
+### Response:
+Yes. Everything I use to reply runs locally on this device, including the language model and your stored memories.
+<|end|>
+### Instruction:
+Generate a unit test for a Python adder.
+### Input:
+def add(a, b): return a + b
+### Response:
+import unittest
+from mymod import add
+
+class TestAdd(unittest.TestCase):
+    def test_add(self):
+        self.assertEqual(add(2, 3), 5)
+        self.assertEqual(add(-1, 1), 0)
+
+if __name__ == '__main__':
+    unittest.main()
+<|end|>
+### Instruction:
+Complete the sentence with a sensible continuation.
+### Input:
+The little robot booted its offline language model and
+### Response:
+ waited patiently for its owner to type the first message of the day.
+<|end|>
+### Instruction:
+Answer the user question directly and briefly.
+### Input:
+Can you work without internet?
+### Response:
+Yes. Everything I use to reply runs locally on this device, including the language model and your stored memories.
+<|end|>
+### Instruction:
+Generate a unit test for a Python adder.
+### Input:
+def add(a, b): return a + b
+### Response:
+import unittest
+from mymod import add
+
+class TestAdd(unittest.TestCase):
+    def test_add(self):
+        self.assertEqual(add(2, 3), 5)
+        self.assertEqual(add(-1, 1), 0)
+
+if __name__ == '__main__':
+    unittest.main()
+<|end|>
+### Instruction:
+Complete the sentence with a sensible continuation.
+### Input:
+The little robot booted its offline language model and
+### Response:
+ waited patiently for its owner to type the first message of the day.
+<|end|>
+### Instruction:
+Answer the user question directly and briefly.
+### Input:
+Can you work without internet?
+### Response:
+Yes. Everything I use to reply runs locally on this device, including the language model and your stored memories.
+<|end|>
+### Instruction:
+Generate a unit test for a Python adder.
+### Input:
+def add(a, b): return a + b
+### Response:
+import unittest
+from mymod import add
+
+class TestAdd(unittest.TestCase):
+    def test_add(self):
+        self.assertEqual(add(2, 3), 5)
+        self.assertEqual(add(-1, 1), 0)
+
+if __name__ == '__main__':
+    unittest.main()
+<|end|>
+### Instruction:
+Complete the sentence with a sensible continuation.
+### Input:
+The little robot booted its offline language model and
+### Response:
+ waited patiently for its owner to type the first message of the day.
+<|end|>
+### Instruction:
+Answer the user question directly and briefly.
+### Input:
+Can you work without internet?
+### Response:
+Yes. Everything I use to reply runs locally on this device, including the language model and your stored memories.
+<|end|>
+### Instruction:
+Generate a unit test for a Python adder.
+### Input:
+def add(a, b): return a + b
+### Response:
+import unittest
+from mymod import add
+
+class TestAdd(unittest.TestCase):
+    def test_add(self):
+        self.assertEqual(add(2, 3), 5)
+        self.assertEqual(add(-1, 1), 0)
+
+if __name__ == '__main__':
+    unittest.main()
+<|end|>
+### Instruction:
+Complete the sentence with a sensible continuation.
+### Input:
+The little robot booted its offline language model and
+### Response:
+ waited patiently for its owner to type the first message of the day.
+<|end|>
+### Instruction:
+Answer the user question directly and briefly.
+### Input:
+Can you work without internet?
+### Response:
+Yes. Everything I use to reply runs locally on this device, including the language model and your stored memories.
+<|end|>
+### Instruction:
+Generate a unit test for a Python adder.
+### Input:
+def add(a, b): return a + b
+### Response:
+import unittest
+from mymod import add
+
+class TestAdd(unittest.TestCase):
+    def test_add(self):
+        self.assertEqual(add(2, 3), 5)
+        self.assertEqual(add(-1, 1), 0)
+
+if __name__ == '__main__':
+    unittest.main()
+<|end|>
+### Instruction:
+Complete the sentence with a sensible continuation.
+### Input:
+The little robot booted its offline language model and
+### Response:
+ waited patiently for its owner to type the first message of the day.
+<|end|>
+### Instruction:
+Answer the user question directly and briefly.
+### Input:
+Can you work without internet?
+### Response:
+Yes. Everything I use to reply runs locally on this device, including the language model and your stored memories.
+<|end|>
+### Instruction:
+Generate a unit test for a Python adder.
+### Input:
+def add(a, b): return a + b
+### Response:
+import unittest
+from mymod import add
+
+class TestAdd(unittest.TestCase):
+    def test_add(self):
+        self.assertEqual(add(2, 3), 5)
+        self.assertEqual(add(-1, 1), 0)
+
+if __name__ == '__main__':
+    unittest.main()
+<|end|>
+### Instruction:
+Complete the sentence with a sensible continuation.
+### Input:
+The little robot booted its offline language model and
+### Response:
+ waited patiently for its owner to type the first message of the day.
+<|end|>
+### Instruction:
+Answer the user question directly and briefly.
+### Input:
+Can you work without internet?
+### Response:
+Yes. Everything I use to reply runs locally on this device, including the language model and your stored memories.
+<|end|>
+### Instruction:
+Generate a unit test for a Python adder.
+### Input:
+def add(a, b): return a + b
+### Response:
+import unittest
+from mymod import add
+
+class TestAdd(unittest.TestCase):
+    def test_add(self):
+        self.assertEqual(add(2, 3), 5)
+        self.assertEqual(add(-1, 1), 0)
+
+if __name__ == '__main__':
+    unittest.main()
+<|end|>
+### Instruction:
+Complete the sentence with a sensible continuation.
+### Input:
+The little robot booted its offline language model and
+### Response:
+ waited patiently for its owner to type the first message of the day.
+<|end|>
+### Instruction:
+Answer the user question directly and briefly.
+### Input:
+Can you work without internet?
+### Response:
+Yes. Everything I use to reply runs locally on this device, including the language model and your stored memories.
+<|end|>
+### Instruction:
+Generate a unit test for a Python adder.
+### Input:
+def add(a, b): return a + b
+### Response:
+import unittest
+from mymod import add
+
+class TestAdd(unittest.TestCase):
+    def test_add(self):
+        self.assertEqual(add(2, 3), 5)
+        self.assertEqual(add(-1, 1), 0)
+
+if __name__ == '__main__':
+    unittest.main()
+<|end|>
+### Instruction:
+Complete the sentence with a sensible continuation.
+### Input:
+The little robot booted its offline language model and
+### Response:
+ waited patiently for its owner to type the first message of the day.
+<|end|>
+### Instruction:
+Answer the user question directly and briefly.
+### Input:
+Can you work without internet?
+### Response:
+Yes. Everything I use to reply runs locally on this device, including the language model and your stored memories.
+<|end|>
+### Instruction:
+Generate a unit test for a Python adder.
+### Input:
+def add(a, b): return a + b
+### Response:
+import unittest
+from mymod import add
+
+class TestAdd(unittest.TestCase):
+    def test_add(self):
+        self.assertEqual(add(2, 3), 5)
+        self.assertEqual(add(-1, 1), 0)
+
+if __name__ == '__main__':
+    unittest.main()
+<|end|>
+### Instruction:
+Complete the sentence with a sensible continuation.
+### Input:
+The little robot booted its offline language model and
+### Response:
+ waited patiently for its owner to type the first message of the day.
+<|end|>
+### Instruction:
+Answer the user question directly and briefly.
+### Input:
+Can you work without internet?
+### Response:
+Yes. Everything I use to reply runs locally on this device, including the language model and your stored memories.
+<|end|>
+### Instruction:
+Generate a unit test for a Python adder.
+### Input:
+def add(a, b): return a + b
+### Response:
+import unittest
+from mymod import add
+
+class TestAdd(unittest.TestCase):
+    def test_add(self):
+        self.assertEqual(add(2, 3), 5)
+        self.assertEqual(add(-1, 1), 0)
+
+if __name__ == '__main__':
+    unittest.main()
+<|end|>
+### Instruction:
+Complete the sentence with a sensible continuation.
+### Input:
+The little robot booted its offline language model and
+### Response:
+ waited patiently for its owner to type the first message of the day.
+<|end|>
+### Instruction:
+Answer the user question directly and briefly.
+### Input:
+Can you work without internet?
+### Response:
+Yes. Everything I use to reply runs locally on this device, including the language model and your stored memories.
+<|end|>
+### Instruction:
+Generate a unit test for a Python adder.
+### Input:
+def add(a, b): return a + b
+### Response:
+import unittest
+from mymod import add
+
+class TestAdd(unittest.TestCase):
+    def test_add(self):
+        self.assertEqual(add(2, 3), 5)
+        self.assertEqual(add(-1, 1), 0)
+
+if __name__ == '__main__':
+    unittest.main()
+<|end|>

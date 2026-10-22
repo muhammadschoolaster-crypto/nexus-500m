@@ -1,0 +1,14 @@
+{
+  "name": "NEXUS-PoC",
+  "architecture": "gpt-style decoder-only transformer (pre-LN, GELU, untied head, learned pos emb)",
+  "d_model": 320,
+  "n_layers": 8,
+  "n_heads": 5,
+  "d_ff": 1280,
+  "block_size": 256,
+  "vocab_size": 4096,
+  "params_total": 12567680,
+  "bin_bytes": 50270720,
+  "dtype": "fp32-le",
+  "tensor_plan": "tok_emb[V,d]; pos_emb[T,d];\nfor each layer: ln1_w[d],ln1_b[d], qkv_w[3d,d],qkv_b[3d], proj_w[d,d],proj_b[d],\nln2_w[d],ln2_b[d], fc_w[ff,d],fc_b[ff], proj2_w[d,ff],proj2_b[d];\nlnf_w[d],lnf_b[d]; head_w[V,d]"
+}

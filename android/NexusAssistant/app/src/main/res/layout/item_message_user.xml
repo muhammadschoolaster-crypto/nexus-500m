@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="4dp">
+
+    <TextView
+        android:id="@+id/messageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:maxWidth="300dp"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:lineSpacingExtra="3dp"
+        android:fontFamily="sans-serif"
+        android:background="@drawable/bubble_user"
+        android:textColor="@color/user_bubble_text" />
+</FrameLayout>

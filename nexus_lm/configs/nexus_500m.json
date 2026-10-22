@@ -1,0 +1,10 @@
+{
+  "comment": "NEXUS-500M TARGET config (~494M params, verified by formula + instantiation). Requires GPU cluster to train (hundreds of A100-hours, ~10B tokens). Pipeline-verified but NOT trained in sandbox - see docs/TRAINING_REPORT.md.",
+  "vocab_size": 32000,
+  "d_model": 1280,
+  "n_layers": 21,
+  "n_heads": 20,
+  "d_ff": 5120,
+  "block_size": 1024,
+  "dropout": 0.0
+}

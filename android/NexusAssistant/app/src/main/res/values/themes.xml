@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Nexus" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/nexus_primary</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="android:statusBarColor">@color/nexus_primary</item>
+    </style>
+</resources>

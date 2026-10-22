@@ -1,0 +1,1238 @@
+[
+  {
+    "file": "books/alice.txt",
+    "source": "https://www.gutenberg.org/files/11/11-0.txt",
+    "license": "public domain (Project Gutenberg)",
+    "bytes": 151098
+  },
+  {
+    "file": "books/sherlock.txt",
+    "source": "https://www.gutenberg.org/files/1661/1661-0.txt",
+    "license": "public domain (Project Gutenberg)",
+    "bytes": 587734
+  },
+  {
+    "file": "books/franken.txt",
+    "source": "https://www.gutenberg.org/files/84/84-0.txt",
+    "license": "public domain (Project Gutenberg)",
+    "bytes": 421540
+  },
+  {
+    "file": "books/moby.txt",
+    "source": "https://www.gutenberg.org/files/2701/2701-0.txt",
+    "license": "public domain (Project Gutenberg)",
+    "bytes": 1234549
+  },
+  {
+    "file": "books/dorian.txt",
+    "source": "https://www.gutenberg.org/files/174/174-0.txt",
+    "license": "public domain (Project Gutenberg)",
+    "bytes": 445994
+  },
+  {
+    "file": "books/janeeyre.txt",
+    "source": "https://www.gutenberg.org/files/1260/1260-0.txt",
+    "license": "public domain (Project Gutenberg)",
+    "bytes": 1043966
+  },
+  {
+    "file": "books/treasure.txt",
+    "source": "https://www.gutenberg.org/files/120/120-0.txt",
+    "license": "public domain (Project Gutenberg)",
+    "bytes": 372625
+  },
+  {
+    "file": "books/warworlds.txt",
+    "source": "https://www.gutenberg.org/files/36/36-0.txt",
+    "license": "public domain (Project Gutenberg)",
+    "bytes": 340508
+  },
+  {
+    "file": "books/timemachine.txt",
+    "source": "https://www.gutenberg.org/files/35/35-0.txt",
+    "license": "public domain (Project Gutenberg)",
+    "bytes": 181482
+  },
+  {
+    "file": "books/artofwar.txt",
+    "source": "https://www.gutenberg.org/files/132/132-0.txt",
+    "license": "public domain (Project Gutenberg)",
+    "bytes": 315553
+  },
+  {
+    "file": "code_py/__future__.py",
+    "source": "CPython 3.12 stdlib:__future__.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 5218
+  },
+  {
+    "file": "code_py/_aix_support.py",
+    "source": "CPython 3.12 stdlib:_aix_support.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 4021
+  },
+  {
+    "file": "code_py/_collections_abc.py",
+    "source": "CPython 3.12 stdlib:_collections_abc.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 32089
+  },
+  {
+    "file": "code_py/_compat_pickle.py",
+    "source": "CPython 3.12 stdlib:_compat_pickle.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 8761
+  },
+  {
+    "file": "code_py/_compression.py",
+    "source": "CPython 3.12 stdlib:_compression.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 5681
+  },
+  {
+    "file": "code_py/_markupbase.py",
+    "source": "CPython 3.12 stdlib:_markupbase.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 14653
+  },
+  {
+    "file": "code_py/_osx_support.py",
+    "source": "CPython 3.12 stdlib:_osx_support.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 22023
+  },
+  {
+    "file": "code_py/_py_abc.py",
+    "source": "CPython 3.12 stdlib:_py_abc.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 6189
+  },
+  {
+    "file": "code_py/_pydatetime.py",
+    "source": "CPython 3.12 stdlib:_pydatetime.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 92087
+  },
+  {
+    "file": "code_py/_pyio.py",
+    "source": "CPython 3.12 stdlib:_pyio.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 93593
+  },
+  {
+    "file": "code_py/_pylong.py",
+    "source": "CPython 3.12 stdlib:_pylong.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 10790
+  },
+  {
+    "file": "code_py/_sitebuiltins.py",
+    "source": "CPython 3.12 stdlib:_sitebuiltins.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 3128
+  },
+  {
+    "file": "code_py/_strptime.py",
+    "source": "CPython 3.12 stdlib:_strptime.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 28393
+  },
+  {
+    "file": "code_py/_sysconfigdata__linux_x86_64-linux-gnu.py",
+    "source": "CPython 3.12 stdlib:_sysconfigdata__linux_x86_64-linux-gnu.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 51042
+  },
+  {
+    "file": "code_py/_threading_local.py",
+    "source": "CPython 3.12 stdlib:_threading_local.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 7220
+  },
+  {
+    "file": "code_py/_weakrefset.py",
+    "source": "CPython 3.12 stdlib:_weakrefset.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 5893
+  },
+  {
+    "file": "code_py/abc.py",
+    "source": "CPython 3.12 stdlib:abc.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 6538
+  },
+  {
+    "file": "code_py/aifc.py",
+    "source": "CPython 3.12 stdlib:aifc.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 34211
+  },
+  {
+    "file": "code_py/antigravity.py",
+    "source": "CPython 3.12 stdlib:antigravity.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 500
+  },
+  {
+    "file": "code_py/argparse.py",
+    "source": "CPython 3.12 stdlib:argparse.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 101155
+  },
+  {
+    "file": "code_py/ast.py",
+    "source": "CPython 3.12 stdlib:ast.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 64452
+  },
+  {
+    "file": "code_py/base64.py",
+    "source": "CPython 3.12 stdlib:base64.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 20635
+  },
+  {
+    "file": "code_py/bdb.py",
+    "source": "CPython 3.12 stdlib:bdb.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 33573
+  },
+  {
+    "file": "code_py/bisect.py",
+    "source": "CPython 3.12 stdlib:bisect.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 3423
+  },
+  {
+    "file": "code_py/bz2.py",
+    "source": "CPython 3.12 stdlib:bz2.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 11847
+  },
+  {
+    "file": "code_py/cProfile.py",
+    "source": "CPython 3.12 stdlib:cProfile.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 6556
+  },
+  {
+    "file": "code_py/calendar.py",
+    "source": "CPython 3.12 stdlib:calendar.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 25864
+  },
+  {
+    "file": "code_py/cgi.py",
+    "source": "CPython 3.12 stdlib:cgi.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 34479
+  },
+  {
+    "file": "code_py/cgitb.py",
+    "source": "CPython 3.12 stdlib:cgitb.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 12421
+  },
+  {
+    "file": "code_py/chunk.py",
+    "source": "CPython 3.12 stdlib:chunk.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 5500
+  },
+  {
+    "file": "code_py/cmd.py",
+    "source": "CPython 3.12 stdlib:cmd.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 14873
+  },
+  {
+    "file": "code_py/code.py",
+    "source": "CPython 3.12 stdlib:code.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 10962
+  },
+  {
+    "file": "code_py/codecs.py",
+    "source": "CPython 3.12 stdlib:codecs.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 36870
+  },
+  {
+    "file": "code_py/codeop.py",
+    "source": "CPython 3.12 stdlib:codeop.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 5908
+  },
+  {
+    "file": "code_py/colorsys.py",
+    "source": "CPython 3.12 stdlib:colorsys.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 4062
+  },
+  {
+    "file": "code_py/compileall.py",
+    "source": "CPython 3.12 stdlib:compileall.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 20507
+  },
+  {
+    "file": "code_py/configparser.py",
+    "source": "CPython 3.12 stdlib:configparser.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 54331
+  },
+  {
+    "file": "code_py/contextlib.py",
+    "source": "CPython 3.12 stdlib:contextlib.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 27637
+  },
+  {
+    "file": "code_py/copy.py",
+    "source": "CPython 3.12 stdlib:copy.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 8412
+  },
+  {
+    "file": "code_py/copyreg.py",
+    "source": "CPython 3.12 stdlib:copyreg.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 7614
+  },
+  {
+    "file": "code_py/crypt.py",
+    "source": "CPython 3.12 stdlib:crypt.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 3913
+  },
+  {
+    "file": "code_py/csv.py",
+    "source": "CPython 3.12 stdlib:csv.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 17132
+  },
+  {
+    "file": "code_py/dataclasses.py",
+    "source": "CPython 3.12 stdlib:dataclasses.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 62085
+  },
+  {
+    "file": "code_py/decimal.py",
+    "source": "CPython 3.12 stdlib:decimal.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 2805
+  },
+  {
+    "file": "code_py/difflib.py",
+    "source": "CPython 3.12 stdlib:difflib.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 83368
+  },
+  {
+    "file": "code_py/dis.py",
+    "source": "CPython 3.12 stdlib:dis.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 30227
+  },
+  {
+    "file": "code_py/doctest.py",
+    "source": "CPython 3.12 stdlib:doctest.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 106749
+  },
+  {
+    "file": "code_py/enum.py",
+    "source": "CPython 3.12 stdlib:enum.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 81540
+  },
+  {
+    "file": "code_py/filecmp.py",
+    "source": "CPython 3.12 stdlib:filecmp.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 10381
+  },
+  {
+    "file": "code_py/fileinput.py",
+    "source": "CPython 3.12 stdlib:fileinput.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 15714
+  },
+  {
+    "file": "code_py/fnmatch.py",
+    "source": "CPython 3.12 stdlib:fnmatch.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 5999
+  },
+  {
+    "file": "code_py/fractions.py",
+    "source": "CPython 3.12 stdlib:fractions.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 38147
+  },
+  {
+    "file": "code_py/ftplib.py",
+    "source": "CPython 3.12 stdlib:ftplib.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 35240
+  },
+  {
+    "file": "code_py/functools.py",
+    "source": "CPython 3.12 stdlib:functools.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 37940
+  },
+  {
+    "file": "code_py/genericpath.py",
+    "source": "CPython 3.12 stdlib:genericpath.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 5572
+  },
+  {
+    "file": "code_py/getopt.py",
+    "source": "CPython 3.12 stdlib:getopt.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 7488
+  },
+  {
+    "file": "code_py/getpass.py",
+    "source": "CPython 3.12 stdlib:getpass.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 5990
+  },
+  {
+    "file": "code_py/gettext.py",
+    "source": "CPython 3.12 stdlib:gettext.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 21320
+  },
+  {
+    "file": "code_py/glob.py",
+    "source": "CPython 3.12 stdlib:glob.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 8732
+  },
+  {
+    "file": "code_py/graphlib.py",
+    "source": "CPython 3.12 stdlib:graphlib.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 9648
+  },
+  {
+    "file": "code_py/gzip.py",
+    "source": "CPython 3.12 stdlib:gzip.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 25402
+  },
+  {
+    "file": "code_py/hashlib.py",
+    "source": "CPython 3.12 stdlib:hashlib.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 9349
+  },
+  {
+    "file": "code_py/heapq.py",
+    "source": "CPython 3.12 stdlib:heapq.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 23024
+  },
+  {
+    "file": "code_py/hmac.py",
+    "source": "CPython 3.12 stdlib:hmac.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 7716
+  },
+  {
+    "file": "code_py/imaplib.py",
+    "source": "CPython 3.12 stdlib:imaplib.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 54040
+  },
+  {
+    "file": "code_py/imghdr.py",
+    "source": "CPython 3.12 stdlib:imghdr.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 4398
+  },
+  {
+    "file": "code_py/io.py",
+    "source": "CPython 3.12 stdlib:io.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 3582
+  },
+  {
+    "file": "code_py/ipaddress.py",
+    "source": "CPython 3.12 stdlib:ipaddress.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 81414
+  },
+  {
+    "file": "code_py/keyword.py",
+    "source": "CPython 3.12 stdlib:keyword.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 1073
+  },
+  {
+    "file": "code_py/linecache.py",
+    "source": "CPython 3.12 stdlib:linecache.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 5800
+  },
+  {
+    "file": "code_py/locale.py",
+    "source": "CPython 3.12 stdlib:locale.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 78599
+  },
+  {
+    "file": "code_py/lzma.py",
+    "source": "CPython 3.12 stdlib:lzma.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 13277
+  },
+  {
+    "file": "code_py/mailbox.py",
+    "source": "CPython 3.12 stdlib:mailbox.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 78911
+  },
+  {
+    "file": "code_py/mailcap.py",
+    "source": "CPython 3.12 stdlib:mailcap.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 9333
+  },
+  {
+    "file": "code_py/mimetypes.py",
+    "source": "CPython 3.12 stdlib:mimetypes.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 23037
+  },
+  {
+    "file": "code_py/modulefinder.py",
+    "source": "CPython 3.12 stdlib:modulefinder.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 23699
+  },
+  {
+    "file": "code_py/netrc.py",
+    "source": "CPython 3.12 stdlib:netrc.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 6922
+  },
+  {
+    "file": "code_py/nntplib.py",
+    "source": "CPython 3.12 stdlib:nntplib.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 41087
+  },
+  {
+    "file": "code_py/ntpath.py",
+    "source": "CPython 3.12 stdlib:ntpath.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 30404
+  },
+  {
+    "file": "code_py/nturl2path.py",
+    "source": "CPython 3.12 stdlib:nturl2path.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 2374
+  },
+  {
+    "file": "code_py/numbers.py",
+    "source": "CPython 3.12 stdlib:numbers.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 11467
+  },
+  {
+    "file": "code_py/opcode.py",
+    "source": "CPython 3.12 stdlib:opcode.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 13174
+  },
+  {
+    "file": "code_py/operator.py",
+    "source": "CPython 3.12 stdlib:operator.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 10965
+  },
+  {
+    "file": "code_py/optparse.py",
+    "source": "CPython 3.12 stdlib:optparse.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 60369
+  },
+  {
+    "file": "code_py/os.py",
+    "source": "CPython 3.12 stdlib:os.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 40821
+  },
+  {
+    "file": "code_py/pathlib.py",
+    "source": "CPython 3.12 stdlib:pathlib.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 51052
+  },
+  {
+    "file": "code_py/pdb.py",
+    "source": "CPython 3.12 stdlib:pdb.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 70298
+  },
+  {
+    "file": "code_py/pickle.py",
+    "source": "CPython 3.12 stdlib:pickle.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 66911
+  },
+  {
+    "file": "code_py/pickletools.py",
+    "source": "CPython 3.12 stdlib:pickletools.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 94052
+  },
+  {
+    "file": "code_py/pipes.py",
+    "source": "CPython 3.12 stdlib:pipes.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 8978
+  },
+  {
+    "file": "code_py/pkgutil.py",
+    "source": "CPython 3.12 stdlib:pkgutil.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 18281
+  },
+  {
+    "file": "code_py/platform.py",
+    "source": "CPython 3.12 stdlib:platform.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 43388
+  },
+  {
+    "file": "code_py/plistlib.py",
+    "source": "CPython 3.12 stdlib:plistlib.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 28582
+  },
+  {
+    "file": "code_py/poplib.py",
+    "source": "CPython 3.12 stdlib:poplib.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 14619
+  },
+  {
+    "file": "code_py/posixpath.py",
+    "source": "CPython 3.12 stdlib:posixpath.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 17356
+  },
+  {
+    "file": "code_py/pprint.py",
+    "source": "CPython 3.12 stdlib:pprint.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 24158
+  },
+  {
+    "file": "code_py/profile.py",
+    "source": "CPython 3.12 stdlib:profile.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 23093
+  },
+  {
+    "file": "code_py/pstats.py",
+    "source": "CPython 3.12 stdlib:pstats.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 29289
+  },
+  {
+    "file": "code_py/pty.py",
+    "source": "CPython 3.12 stdlib:pty.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 6137
+  },
+  {
+    "file": "code_py/py_compile.py",
+    "source": "CPython 3.12 stdlib:py_compile.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 7837
+  },
+  {
+    "file": "code_py/pyclbr.py",
+    "source": "CPython 3.12 stdlib:pyclbr.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 11396
+  },
+  {
+    "file": "code_py/pydoc.py",
+    "source": "CPython 3.12 stdlib:pydoc.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 113508
+  },
+  {
+    "file": "code_py/queue.py",
+    "source": "CPython 3.12 stdlib:queue.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 11496
+  },
+  {
+    "file": "code_py/quopri.py",
+    "source": "CPython 3.12 stdlib:quopri.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 7184
+  },
+  {
+    "file": "code_py/random.py",
+    "source": "CPython 3.12 stdlib:random.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 34689
+  },
+  {
+    "file": "code_py/reprlib.py",
+    "source": "CPython 3.12 stdlib:reprlib.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 7148
+  },
+  {
+    "file": "code_py/rlcompleter.py",
+    "source": "CPython 3.12 stdlib:rlcompleter.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 7827
+  },
+  {
+    "file": "code_py/runpy.py",
+    "source": "CPython 3.12 stdlib:runpy.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 12885
+  },
+  {
+    "file": "code_py/sched.py",
+    "source": "CPython 3.12 stdlib:sched.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 6351
+  },
+  {
+    "file": "code_py/secrets.py",
+    "source": "CPython 3.12 stdlib:secrets.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 1984
+  },
+  {
+    "file": "code_py/selectors.py",
+    "source": "CPython 3.12 stdlib:selectors.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 19671
+  },
+  {
+    "file": "code_py/shelve.py",
+    "source": "CPython 3.12 stdlib:shelve.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 8560
+  },
+  {
+    "file": "code_py/shlex.py",
+    "source": "CPython 3.12 stdlib:shlex.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 13353
+  },
+  {
+    "file": "code_py/shutil.py",
+    "source": "CPython 3.12 stdlib:shutil.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 56198
+  },
+  {
+    "file": "code_py/signal.py",
+    "source": "CPython 3.12 stdlib:signal.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 2495
+  },
+  {
+    "file": "code_py/site.py",
+    "source": "CPython 3.12 stdlib:site.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 23198
+  },
+  {
+    "file": "code_py/smtplib.py",
+    "source": "CPython 3.12 stdlib:smtplib.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 43532
+  },
+  {
+    "file": "code_py/sndhdr.py",
+    "source": "CPython 3.12 stdlib:sndhdr.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 7448
+  },
+  {
+    "file": "code_py/socket.py",
+    "source": "CPython 3.12 stdlib:socket.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 37815
+  },
+  {
+    "file": "code_py/socketserver.py",
+    "source": "CPython 3.12 stdlib:socketserver.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 28065
+  },
+  {
+    "file": "code_py/ssl.py",
+    "source": "CPython 3.12 stdlib:ssl.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 52287
+  },
+  {
+    "file": "code_py/stat.py",
+    "source": "CPython 3.12 stdlib:stat.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 5485
+  },
+  {
+    "file": "code_py/statistics.py",
+    "source": "CPython 3.12 stdlib:statistics.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 50227
+  },
+  {
+    "file": "code_py/string.py",
+    "source": "CPython 3.12 stdlib:string.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 11786
+  },
+  {
+    "file": "code_py/stringprep.py",
+    "source": "CPython 3.12 stdlib:stringprep.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 25834
+  },
+  {
+    "file": "code_py/subprocess.py",
+    "source": "CPython 3.12 stdlib:subprocess.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 88747
+  },
+  {
+    "file": "code_py/sunau.py",
+    "source": "CPython 3.12 stdlib:sunau.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 18478
+  },
+  {
+    "file": "code_py/symtable.py",
+    "source": "CPython 3.12 stdlib:symtable.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 12477
+  },
+  {
+    "file": "code_py/sysconfig.py",
+    "source": "CPython 3.12 stdlib:sysconfig.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 31850
+  },
+  {
+    "file": "code_py/tabnanny.py",
+    "source": "CPython 3.12 stdlib:tabnanny.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 11532
+  },
+  {
+    "file": "code_py/tarfile.py",
+    "source": "CPython 3.12 stdlib:tarfile.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 114896
+  },
+  {
+    "file": "code_py/telnetlib.py",
+    "source": "CPython 3.12 stdlib:telnetlib.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 23334
+  },
+  {
+    "file": "code_py/tempfile.py",
+    "source": "CPython 3.12 stdlib:tempfile.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 32386
+  },
+  {
+    "file": "code_py/textwrap.py",
+    "source": "CPython 3.12 stdlib:textwrap.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 19718
+  },
+  {
+    "file": "code_py/this.py",
+    "source": "CPython 3.12 stdlib:this.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 1003
+  },
+  {
+    "file": "code_py/threading.py",
+    "source": "CPython 3.12 stdlib:threading.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 60200
+  },
+  {
+    "file": "code_py/timeit.py",
+    "source": "CPython 3.12 stdlib:timeit.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 13464
+  },
+  {
+    "file": "code_py/token.py",
+    "source": "CPython 3.12 stdlib:token.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 2511
+  },
+  {
+    "file": "code_py/tokenize.py",
+    "source": "CPython 3.12 stdlib:tokenize.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 21570
+  },
+  {
+    "file": "code_py/trace.py",
+    "source": "CPython 3.12 stdlib:trace.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 29352
+  },
+  {
+    "file": "code_py/traceback.py",
+    "source": "CPython 3.12 stdlib:traceback.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 46393
+  },
+  {
+    "file": "code_py/tracemalloc.py",
+    "source": "CPython 3.12 stdlib:tracemalloc.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 18047
+  },
+  {
+    "file": "code_py/tty.py",
+    "source": "CPython 3.12 stdlib:tty.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 2035
+  },
+  {
+    "file": "code_py/types.py",
+    "source": "CPython 3.12 stdlib:types.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 10993
+  },
+  {
+    "file": "code_py/typing.py",
+    "source": "CPython 3.12 stdlib:typing.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 118836
+  },
+  {
+    "file": "code_py/uu.py",
+    "source": "CPython 3.12 stdlib:uu.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 7365
+  },
+  {
+    "file": "code_py/uuid.py",
+    "source": "CPython 3.12 stdlib:uuid.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 29656
+  },
+  {
+    "file": "code_py/warnings.py",
+    "source": "CPython 3.12 stdlib:warnings.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 21909
+  },
+  {
+    "file": "code_py/wave.py",
+    "source": "CPython 3.12 stdlib:wave.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 22769
+  },
+  {
+    "file": "code_py/weakref.py",
+    "source": "CPython 3.12 stdlib:weakref.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 21513
+  },
+  {
+    "file": "code_py/webbrowser.py",
+    "source": "CPython 3.12 stdlib:webbrowser.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 24207
+  },
+  {
+    "file": "code_py/xdrlib.py",
+    "source": "CPython 3.12 stdlib:xdrlib.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 5942
+  },
+  {
+    "file": "code_py/zipapp.py",
+    "source": "CPython 3.12 stdlib:zipapp.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 7543
+  },
+  {
+    "file": "code_py/zipimport.py",
+    "source": "CPython 3.12 stdlib:zipimport.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 27840
+  },
+  {
+    "file": "code_py/json____init__.py",
+    "source": "CPython 3.12 stdlib:json/__init__.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 14020
+  },
+  {
+    "file": "code_py/json__decoder.py",
+    "source": "CPython 3.12 stdlib:json/decoder.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 12525
+  },
+  {
+    "file": "code_py/json__encoder.py",
+    "source": "CPython 3.12 stdlib:json/encoder.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 16075
+  },
+  {
+    "file": "code_py/json__scanner.py",
+    "source": "CPython 3.12 stdlib:json/scanner.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 2434
+  },
+  {
+    "file": "code_py/json__tool.py",
+    "source": "CPython 3.12 stdlib:json/tool.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 3339
+  },
+  {
+    "file": "code_py/asyncio____init__.py",
+    "source": "CPython 3.12 stdlib:asyncio/__init__.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 1220
+  },
+  {
+    "file": "code_py/asyncio____main__.py",
+    "source": "CPython 3.12 stdlib:asyncio/__main__.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 3491
+  },
+  {
+    "file": "code_py/asyncio__base_events.py",
+    "source": "CPython 3.12 stdlib:asyncio/base_events.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 78567
+  },
+  {
+    "file": "code_py/asyncio__base_futures.py",
+    "source": "CPython 3.12 stdlib:asyncio/base_futures.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 1974
+  },
+  {
+    "file": "code_py/asyncio__base_subprocess.py",
+    "source": "CPython 3.12 stdlib:asyncio/base_subprocess.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 8869
+  },
+  {
+    "file": "code_py/asyncio__base_tasks.py",
+    "source": "CPython 3.12 stdlib:asyncio/base_tasks.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 2672
+  },
+  {
+    "file": "code_py/asyncio__constants.py",
+    "source": "CPython 3.12 stdlib:asyncio/constants.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 1413
+  },
+  {
+    "file": "code_py/asyncio__coroutines.py",
+    "source": "CPython 3.12 stdlib:asyncio/coroutines.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 3342
+  },
+  {
+    "file": "code_py/asyncio__events.py",
+    "source": "CPython 3.12 stdlib:asyncio/events.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 29339
+  },
+  {
+    "file": "code_py/asyncio__exceptions.py",
+    "source": "CPython 3.12 stdlib:asyncio/exceptions.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 1752
+  },
+  {
+    "file": "code_py/asyncio__format_helpers.py",
+    "source": "CPython 3.12 stdlib:asyncio/format_helpers.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 2404
+  },
+  {
+    "file": "code_py/asyncio__futures.py",
+    "source": "CPython 3.12 stdlib:asyncio/futures.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 14340
+  },
+  {
+    "file": "code_py/asyncio__locks.py",
+    "source": "CPython 3.12 stdlib:asyncio/locks.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 18995
+  },
+  {
+    "file": "code_py/asyncio__proactor_events.py",
+    "source": "CPython 3.12 stdlib:asyncio/proactor_events.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 33500
+  },
+  {
+    "file": "code_py/asyncio__protocols.py",
+    "source": "CPython 3.12 stdlib:asyncio/protocols.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 6957
+  },
+  {
+    "file": "code_py/asyncio__queues.py",
+    "source": "CPython 3.12 stdlib:asyncio/queues.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 7974
+  },
+  {
+    "file": "code_py/asyncio__runners.py",
+    "source": "CPython 3.12 stdlib:asyncio/runners.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 7230
+  },
+  {
+    "file": "code_py/asyncio__selector_events.py",
+    "source": "CPython 3.12 stdlib:asyncio/selector_events.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 48332
+  },
+  {
+    "file": "code_py/asyncio__sslproto.py",
+    "source": "CPython 3.12 stdlib:asyncio/sslproto.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 31899
+  },
+  {
+    "file": "code_py/asyncio__staggered.py",
+    "source": "CPython 3.12 stdlib:asyncio/staggered.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 7077
+  },
+  {
+    "file": "code_py/asyncio__streams.py",
+    "source": "CPython 3.12 stdlib:asyncio/streams.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 27619
+  },
+  {
+    "file": "code_py/asyncio__subprocess.py",
+    "source": "CPython 3.12 stdlib:asyncio/subprocess.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 7737
+  },
+  {
+    "file": "code_py/asyncio__taskgroups.py",
+    "source": "CPython 3.12 stdlib:asyncio/taskgroups.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 9559
+  },
+  {
+    "file": "code_py/asyncio__tasks.py",
+    "source": "CPython 3.12 stdlib:asyncio/tasks.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 37362
+  },
+  {
+    "file": "code_py/asyncio__threads.py",
+    "source": "CPython 3.12 stdlib:asyncio/threads.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 790
+  },
+  {
+    "file": "code_py/asyncio__timeouts.py",
+    "source": "CPython 3.12 stdlib:asyncio/timeouts.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 5321
+  },
+  {
+    "file": "code_py/asyncio__transports.py",
+    "source": "CPython 3.12 stdlib:asyncio/transports.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 10722
+  },
+  {
+    "file": "code_py/asyncio__trsock.py",
+    "source": "CPython 3.12 stdlib:asyncio/trsock.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 2475
+  },
+  {
+    "file": "code_py/asyncio__unix_events.py",
+    "source": "CPython 3.12 stdlib:asyncio/unix_events.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 53124
+  },
+  {
+    "file": "code_py/asyncio__windows_events.py",
+    "source": "CPython 3.12 stdlib:asyncio/windows_events.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 32587
+  },
+  {
+    "file": "code_py/asyncio__windows_utils.py",
+    "source": "CPython 3.12 stdlib:asyncio/windows_utils.py",
+    "license": "PSF License (Python Software Foundation)",
+    "bytes": 5060
+  },
+  {
+    "file": "authored/sample_app.html",
+    "source": "authored for NEXUS",
+    "license": "MIT (this repo)",
+    "bytes": 784
+  },
+  {
+    "file": "authored/demo_schema.sql",
+    "source": "authored for NEXUS",
+    "license": "MIT (this repo)",
+    "bytes": 599
+  },
+  {
+    "file": "authored/build.sh",
+    "source": "authored for NEXUS",
+    "license": "MIT (this repo)",
+    "bytes": 597
+  },
+  {
+    "file": "authored/MemoryStore.kt",
+    "source": "authored for NEXUS",
+    "license": "MIT (this repo)",
+    "bytes": 519
+  },
+  {
+    "file": "authored/tokenizer_helpers.js",
+    "source": "authored for NEXUS",
+    "license": "MIT (this repo)",
+    "bytes": 805
+  },
+  {
+    "file": "instruct/synthetic_instructions.txt",
+    "source": "authored for NEXUS (synthetic, labeled)",
+    "license": "MIT (this repo)",
+    "bytes": 27216
+  }
+]

@@ -1,0 +1,1242 @@
+{
+  "train_tokens": 3752313,
+  "val_tokens": 76477,
+  "files": [
+    {
+      "file": "authored/MemoryStore.kt",
+      "chars": 519,
+      "tokens": 259,
+      "tag": "<|code:kotlin|>"
+    },
+    {
+      "file": "authored/build.sh",
+      "chars": 597,
+      "tokens": 328,
+      "tag": "<|code:shell|>"
+    },
+    {
+      "file": "authored/demo_schema.sql",
+      "chars": 599,
+      "tokens": 356,
+      "tag": "<|code:sql|>"
+    },
+    {
+      "file": "authored/sample_app.html",
+      "chars": 784,
+      "tokens": 412,
+      "tag": "<|code:html|>"
+    },
+    {
+      "file": "authored/tokenizer_helpers.js",
+      "chars": 805,
+      "tokens": 439,
+      "tag": "<|code:js|>"
+    },
+    {
+      "file": "code_py/__future__.py",
+      "chars": 5218,
+      "tokens": 2014,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/_aix_support.py",
+      "chars": 4021,
+      "tokens": 1816,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/_collections_abc.py",
+      "chars": 32089,
+      "tokens": 9979,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/_compat_pickle.py",
+      "chars": 8761,
+      "tokens": 3490,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/_compression.py",
+      "chars": 5681,
+      "tokens": 1637,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/_markupbase.py",
+      "chars": 14653,
+      "tokens": 4843,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/_osx_support.py",
+      "chars": 22023,
+      "tokens": 8278,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/_py_abc.py",
+      "chars": 6189,
+      "tokens": 1910,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/_pydatetime.py",
+      "chars": 92087,
+      "tokens": 32213,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/_pyio.py",
+      "chars": 93593,
+      "tokens": 28392,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/_pylong.py",
+      "chars": 10790,
+      "tokens": 4658,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/_sitebuiltins.py",
+      "chars": 3128,
+      "tokens": 941,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/_strptime.py",
+      "chars": 28393,
+      "tokens": 10250,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/_sysconfigdata__linux_x86_64-linux-gnu.py",
+      "chars": 51042,
+      "tokens": 23274,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/_threading_local.py",
+      "chars": 7220,
+      "tokens": 2550,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/_weakrefset.py",
+      "chars": 5893,
+      "tokens": 1633,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/abc.py",
+      "chars": 6538,
+      "tokens": 2010,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/aifc.py",
+      "chars": 34211,
+      "tokens": 10999,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/antigravity.py",
+      "chars": 500,
+      "tokens": 263,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/argparse.py",
+      "chars": 101155,
+      "tokens": 27913,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/ast.py",
+      "chars": 64452,
+      "tokens": 19212,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/asyncio____init__.py",
+      "chars": 1220,
+      "tokens": 434,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/asyncio____main__.py",
+      "chars": 3491,
+      "tokens": 952,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/asyncio__base_events.py",
+      "chars": 78567,
+      "tokens": 21430,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/asyncio__base_futures.py",
+      "chars": 1974,
+      "tokens": 680,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/asyncio__base_subprocess.py",
+      "chars": 8869,
+      "tokens": 2299,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/asyncio__base_tasks.py",
+      "chars": 2672,
+      "tokens": 860,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/asyncio__constants.py",
+      "chars": 1413,
+      "tokens": 717,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/asyncio__coroutines.py",
+      "chars": 3342,
+      "tokens": 1121,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/asyncio__events.py",
+      "chars": 29339,
+      "tokens": 8519,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/asyncio__exceptions.py",
+      "chars": 1752,
+      "tokens": 556,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/asyncio__format_helpers.py",
+      "chars": 2404,
+      "tokens": 764,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/asyncio__futures.py",
+      "chars": 14340,
+      "tokens": 4270,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/asyncio__locks.py",
+      "chars": 18995,
+      "tokens": 6028,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/asyncio__proactor_events.py",
+      "chars": 33500,
+      "tokens": 8668,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/asyncio__protocols.py",
+      "chars": 6957,
+      "tokens": 2334,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/asyncio__queues.py",
+      "chars": 7974,
+      "tokens": 2504,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/asyncio__runners.py",
+      "chars": 7230,
+      "tokens": 2209,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/asyncio__selector_events.py",
+      "chars": 48332,
+      "tokens": 12606,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/asyncio__sslproto.py",
+      "chars": 31899,
+      "tokens": 8601,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/asyncio__staggered.py",
+      "chars": 7077,
+      "tokens": 2337,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/asyncio__streams.py",
+      "chars": 27619,
+      "tokens": 7756,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/asyncio__subprocess.py",
+      "chars": 7737,
+      "tokens": 1984,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/asyncio__taskgroups.py",
+      "chars": 9559,
+      "tokens": 2755,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/asyncio__tasks.py",
+      "chars": 37362,
+      "tokens": 11776,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/asyncio__threads.py",
+      "chars": 790,
+      "tokens": 303,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/asyncio__timeouts.py",
+      "chars": 5321,
+      "tokens": 1753,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/asyncio__transports.py",
+      "chars": 10722,
+      "tokens": 3065,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/asyncio__trsock.py",
+      "chars": 2475,
+      "tokens": 683,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/asyncio__unix_events.py",
+      "chars": 53124,
+      "tokens": 14509,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/asyncio__windows_events.py",
+      "chars": 32587,
+      "tokens": 9794,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/asyncio__windows_utils.py",
+      "chars": 5060,
+      "tokens": 1782,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/base64.py",
+      "chars": 20635,
+      "tokens": 8131,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/bdb.py",
+      "chars": 33573,
+      "tokens": 10541,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/bisect.py",
+      "chars": 3423,
+      "tokens": 1409,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/bz2.py",
+      "chars": 11847,
+      "tokens": 3777,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/cProfile.py",
+      "chars": 6556,
+      "tokens": 2049,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/calendar.py",
+      "chars": 25864,
+      "tokens": 9181,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/cgi.py",
+      "chars": 34479,
+      "tokens": 11248,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/cgitb.py",
+      "chars": 12421,
+      "tokens": 4468,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/chunk.py",
+      "chars": 5500,
+      "tokens": 1745,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/cmd.py",
+      "chars": 14873,
+      "tokens": 4521,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/code.py",
+      "chars": 10962,
+      "tokens": 3285,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/codecs.py",
+      "chars": 36870,
+      "tokens": 11389,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/codeop.py",
+      "chars": 5908,
+      "tokens": 2027,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/colorsys.py",
+      "chars": 4062,
+      "tokens": 2307,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/compileall.py",
+      "chars": 20507,
+      "tokens": 5906,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/configparser.py",
+      "chars": 54331,
+      "tokens": 15843,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/contextlib.py",
+      "chars": 27637,
+      "tokens": 8136,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/copy.py",
+      "chars": 8412,
+      "tokens": 3030,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/copyreg.py",
+      "chars": 7614,
+      "tokens": 2515,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/crypt.py",
+      "chars": 3913,
+      "tokens": 1538,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/csv.py",
+      "chars": 17132,
+      "tokens": 5682,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/dataclasses.py",
+      "chars": 62085,
+      "tokens": 21750,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/decimal.py",
+      "chars": 2805,
+      "tokens": 1297,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/difflib.py",
+      "chars": 83368,
+      "tokens": 30692,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/dis.py",
+      "chars": 30227,
+      "tokens": 9999,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/doctest.py",
+      "chars": 106749,
+      "tokens": 34767,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/enum.py",
+      "chars": 81540,
+      "tokens": 23924,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/filecmp.py",
+      "chars": 10381,
+      "tokens": 3501,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/fileinput.py",
+      "chars": 15714,
+      "tokens": 4704,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/fnmatch.py",
+      "chars": 5999,
+      "tokens": 2107,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/fractions.py",
+      "chars": 38142,
+      "tokens": 13316,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/ftplib.py",
+      "chars": 35238,
+      "tokens": 12348,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/functools.py",
+      "chars": 37939,
+      "tokens": 12161,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/genericpath.py",
+      "chars": 5572,
+      "tokens": 2144,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/getopt.py",
+      "chars": 7487,
+      "tokens": 2807,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/getpass.py",
+      "chars": 5990,
+      "tokens": 2081,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/gettext.py",
+      "chars": 21320,
+      "tokens": 7727,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/glob.py",
+      "chars": 8732,
+      "tokens": 2896,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/graphlib.py",
+      "chars": 9648,
+      "tokens": 3259,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/gzip.py",
+      "chars": 25402,
+      "tokens": 8119,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/hashlib.py",
+      "chars": 9349,
+      "tokens": 3562,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/heapq.py",
+      "chars": 23023,
+      "tokens": 9448,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/hmac.py",
+      "chars": 7716,
+      "tokens": 2555,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/imaplib.py",
+      "chars": 54040,
+      "tokens": 18812,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/imghdr.py",
+      "chars": 4398,
+      "tokens": 1709,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/io.py",
+      "chars": 3582,
+      "tokens": 1484,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/ipaddress.py",
+      "chars": 81414,
+      "tokens": 25415,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/json____init__.py",
+      "chars": 14020,
+      "tokens": 5409,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/json__decoder.py",
+      "chars": 12525,
+      "tokens": 4426,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/json__encoder.py",
+      "chars": 16075,
+      "tokens": 4874,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/json__scanner.py",
+      "chars": 2434,
+      "tokens": 914,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/json__tool.py",
+      "chars": 3339,
+      "tokens": 996,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/keyword.py",
+      "chars": 1073,
+      "tokens": 417,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/linecache.py",
+      "chars": 5800,
+      "tokens": 1790,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/locale.py",
+      "chars": 78599,
+      "tokens": 26698,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/lzma.py",
+      "chars": 13277,
+      "tokens": 4468,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/mailbox.py",
+      "chars": 78911,
+      "tokens": 21584,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/mailcap.py",
+      "chars": 9333,
+      "tokens": 3324,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/mimetypes.py",
+      "chars": 23037,
+      "tokens": 8281,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/modulefinder.py",
+      "chars": 23699,
+      "tokens": 7306,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/netrc.py",
+      "chars": 6922,
+      "tokens": 1990,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/nntplib.py",
+      "chars": 41087,
+      "tokens": 14032,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/ntpath.py",
+      "chars": 30404,
+      "tokens": 10981,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/nturl2path.py",
+      "chars": 2374,
+      "tokens": 1004,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/numbers.py",
+      "chars": 11467,
+      "tokens": 3512,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/opcode.py",
+      "chars": 13173,
+      "tokens": 6409,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/operator.py",
+      "chars": 10965,
+      "tokens": 4251,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/optparse.py",
+      "chars": 60369,
+      "tokens": 18484,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/os.py",
+      "chars": 40821,
+      "tokens": 13747,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/pathlib.py",
+      "chars": 51052,
+      "tokens": 16161,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/pdb.py",
+      "chars": 70298,
+      "tokens": 21858,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/pickle.py",
+      "chars": 66911,
+      "tokens": 21468,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/pickletools.py",
+      "chars": 94052,
+      "tokens": 33899,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/pipes.py",
+      "chars": 8978,
+      "tokens": 3460,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/pkgutil.py",
+      "chars": 18281,
+      "tokens": 6181,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/platform.py",
+      "chars": 43388,
+      "tokens": 15578,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/plistlib.py",
+      "chars": 28582,
+      "tokens": 9056,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/poplib.py",
+      "chars": 14619,
+      "tokens": 4839,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/posixpath.py",
+      "chars": 17356,
+      "tokens": 6420,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/pprint.py",
+      "chars": 24158,
+      "tokens": 6994,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/profile.py",
+      "chars": 23093,
+      "tokens": 8123,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/pstats.py",
+      "chars": 29289,
+      "tokens": 9085,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/pty.py",
+      "chars": 6137,
+      "tokens": 2253,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/py_compile.py",
+      "chars": 7837,
+      "tokens": 2574,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/pyclbr.py",
+      "chars": 11396,
+      "tokens": 3592,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/pydoc.py",
+      "chars": 113508,
+      "tokens": 36743,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/queue.py",
+      "chars": 11496,
+      "tokens": 3776,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/quopri.py",
+      "chars": 7184,
+      "tokens": 2750,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/random.py",
+      "chars": 34688,
+      "tokens": 13119,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/reprlib.py",
+      "chars": 7148,
+      "tokens": 2326,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/rlcompleter.py",
+      "chars": 7827,
+      "tokens": 2450,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/runpy.py",
+      "chars": 12881,
+      "tokens": 4176,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/sched.py",
+      "chars": 6351,
+      "tokens": 2155,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/secrets.py",
+      "chars": 1984,
+      "tokens": 823,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/selectors.py",
+      "chars": 19671,
+      "tokens": 5844,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/shelve.py",
+      "chars": 8560,
+      "tokens": 2830,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/shlex.py",
+      "chars": 13291,
+      "tokens": 3767,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/shutil.py",
+      "chars": 56198,
+      "tokens": 19313,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/signal.py",
+      "chars": 2495,
+      "tokens": 898,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/site.py",
+      "chars": 23198,
+      "tokens": 7832,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/smtplib.py",
+      "chars": 43532,
+      "tokens": 14529,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/sndhdr.py",
+      "chars": 7448,
+      "tokens": 2943,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/socket.py",
+      "chars": 37815,
+      "tokens": 12929,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/socketserver.py",
+      "chars": 28065,
+      "tokens": 8863,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/ssl.py",
+      "chars": 52287,
+      "tokens": 17343,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/stat.py",
+      "chars": 5485,
+      "tokens": 2724,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/statistics.py",
+      "chars": 50225,
+      "tokens": 21142,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/string.py",
+      "chars": 11786,
+      "tokens": 3706,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/stringprep.py",
+      "chars": 25834,
+      "tokens": 13554,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/subprocess.py",
+      "chars": 88747,
+      "tokens": 26024,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/sunau.py",
+      "chars": 18478,
+      "tokens": 5839,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/symtable.py",
+      "chars": 12477,
+      "tokens": 3955,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/sysconfig.py",
+      "chars": 31850,
+      "tokens": 11664,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/tabnanny.py",
+      "chars": 11532,
+      "tokens": 4327,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/tarfile.py",
+      "chars": 114896,
+      "tokens": 36095,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/telnetlib.py",
+      "chars": 23334,
+      "tokens": 7953,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/tempfile.py",
+      "chars": 32386,
+      "tokens": 10191,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/textwrap.py",
+      "chars": 19718,
+      "tokens": 6816,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/this.py",
+      "chars": 1003,
+      "tokens": 756,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/threading.py",
+      "chars": 60200,
+      "tokens": 19551,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/timeit.py",
+      "chars": 13464,
+      "tokens": 4774,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/token.py",
+      "chars": 2511,
+      "tokens": 1567,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/tokenize.py",
+      "chars": 21570,
+      "tokens": 7876,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/trace.py",
+      "chars": 29352,
+      "tokens": 9299,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/traceback.py",
+      "chars": 46393,
+      "tokens": 14591,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/tracemalloc.py",
+      "chars": 18047,
+      "tokens": 5008,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/tty.py",
+      "chars": 2035,
+      "tokens": 1047,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/types.py",
+      "chars": 10993,
+      "tokens": 3780,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/typing.py",
+      "chars": 118836,
+      "tokens": 40036,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/uu.py",
+      "chars": 7365,
+      "tokens": 2593,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/uuid.py",
+      "chars": 29656,
+      "tokens": 11534,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/warnings.py",
+      "chars": 21909,
+      "tokens": 6993,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/wave.py",
+      "chars": 22769,
+      "tokens": 6900,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/weakref.py",
+      "chars": 21513,
+      "tokens": 6376,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/webbrowser.py",
+      "chars": 24207,
+      "tokens": 8053,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/xdrlib.py",
+      "chars": 5942,
+      "tokens": 1847,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/zipapp.py",
+      "chars": 7543,
+      "tokens": 2632,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "code_py/zipimport.py",
+      "chars": 27840,
+      "tokens": 9507,
+      "tag": "<|code:python|>"
+    },
+    {
+      "file": "books/alice.txt",
+      "chars": 144603,
+      "tokens": 65773,
+      "tag": "<|text|>"
+    },
+    {
+      "file": "books/artofwar.txt",
+      "chars": 312841,
+      "tokens": 145318,
+      "tag": "<|text|>"
+    },
+    {
+      "file": "books/dorian.txt",
+      "chars": 429320,
+      "tokens": 194248,
+      "tag": "<|text|>"
+    },
+    {
+      "file": "books/franken.txt",
+      "chars": 419341,
+      "tokens": 187593,
+      "tag": "<|text|>"
+    },
+    {
+      "file": "books/janeeyre.txt",
+      "chars": 1022383,
+      "tokens": 467330,
+      "tag": "<|text|>"
+    },
+    {
+      "file": "books/moby.txt",
+      "chars": 1218981,
+      "tokens": 555015,
+      "tag": "<|text|>"
+    },
+    {
+      "file": "books/sherlock.txt",
+      "chars": 562212,
+      "tokens": 255031,
+      "tag": "<|text|>"
+    },
+    {
+      "file": "books/timemachine.txt",
+      "chars": 179706,
+      "tokens": 81017,
+      "tag": "<|text|>"
+    },
+    {
+      "file": "books/treasure.txt",
+      "chars": 364525,
+      "tokens": 168668,
+      "tag": "<|text|>"
+    },
+    {
+      "file": "books/warworlds.txt",
+      "chars": 337428,
+      "tokens": 151877,
+      "tag": "<|text|>"
+    },
+    {
+      "file": "instruct/synthetic_instructions.txt",
+      "chars": 27216,
+      "tokens": 10933,
+      "tag": "<|text|>"
+    }
+  ]
+}

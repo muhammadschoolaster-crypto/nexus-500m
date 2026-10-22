@@ -1,0 +1,849 @@
+{
+  "tensors": [
+    {
+      "name": "tok_emb",
+      "shape": [
+        4096,
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 0
+    },
+    {
+      "name": "pos_emb",
+      "shape": [
+        256,
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 1310720
+    },
+    {
+      "name": "L0.ln1_w",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 1392640
+    },
+    {
+      "name": "L0.ln1_b",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 1392960
+    },
+    {
+      "name": "L0.qkv_w",
+      "shape": [
+        960,
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 1393280
+    },
+    {
+      "name": "L0.qkv_b",
+      "shape": [
+        960
+      ],
+      "dtype": "fp32",
+      "offset_floats": 1700480
+    },
+    {
+      "name": "L0.proj_w",
+      "shape": [
+        320,
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 1701440
+    },
+    {
+      "name": "L0.proj_b",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 1803840
+    },
+    {
+      "name": "L0.ln2_w",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 1804160
+    },
+    {
+      "name": "L0.ln2_b",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 1804480
+    },
+    {
+      "name": "L0.fc_w",
+      "shape": [
+        1280,
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 1804800
+    },
+    {
+      "name": "L0.fc_b",
+      "shape": [
+        1280
+      ],
+      "dtype": "fp32",
+      "offset_floats": 2214400
+    },
+    {
+      "name": "L0.proj2_w",
+      "shape": [
+        320,
+        1280
+      ],
+      "dtype": "fp32",
+      "offset_floats": 2215680
+    },
+    {
+      "name": "L0.proj2_b",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 2625280
+    },
+    {
+      "name": "L1.ln1_w",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 2625600
+    },
+    {
+      "name": "L1.ln1_b",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 2625920
+    },
+    {
+      "name": "L1.qkv_w",
+      "shape": [
+        960,
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 2626240
+    },
+    {
+      "name": "L1.qkv_b",
+      "shape": [
+        960
+      ],
+      "dtype": "fp32",
+      "offset_floats": 2933440
+    },
+    {
+      "name": "L1.proj_w",
+      "shape": [
+        320,
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 2934400
+    },
+    {
+      "name": "L1.proj_b",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 3036800
+    },
+    {
+      "name": "L1.ln2_w",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 3037120
+    },
+    {
+      "name": "L1.ln2_b",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 3037440
+    },
+    {
+      "name": "L1.fc_w",
+      "shape": [
+        1280,
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 3037760
+    },
+    {
+      "name": "L1.fc_b",
+      "shape": [
+        1280
+      ],
+      "dtype": "fp32",
+      "offset_floats": 3447360
+    },
+    {
+      "name": "L1.proj2_w",
+      "shape": [
+        320,
+        1280
+      ],
+      "dtype": "fp32",
+      "offset_floats": 3448640
+    },
+    {
+      "name": "L1.proj2_b",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 3858240
+    },
+    {
+      "name": "L2.ln1_w",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 3858560
+    },
+    {
+      "name": "L2.ln1_b",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 3858880
+    },
+    {
+      "name": "L2.qkv_w",
+      "shape": [
+        960,
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 3859200
+    },
+    {
+      "name": "L2.qkv_b",
+      "shape": [
+        960
+      ],
+      "dtype": "fp32",
+      "offset_floats": 4166400
+    },
+    {
+      "name": "L2.proj_w",
+      "shape": [
+        320,
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 4167360
+    },
+    {
+      "name": "L2.proj_b",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 4269760
+    },
+    {
+      "name": "L2.ln2_w",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 4270080
+    },
+    {
+      "name": "L2.ln2_b",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 4270400
+    },
+    {
+      "name": "L2.fc_w",
+      "shape": [
+        1280,
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 4270720
+    },
+    {
+      "name": "L2.fc_b",
+      "shape": [
+        1280
+      ],
+      "dtype": "fp32",
+      "offset_floats": 4680320
+    },
+    {
+      "name": "L2.proj2_w",
+      "shape": [
+        320,
+        1280
+      ],
+      "dtype": "fp32",
+      "offset_floats": 4681600
+    },
+    {
+      "name": "L2.proj2_b",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 5091200
+    },
+    {
+      "name": "L3.ln1_w",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 5091520
+    },
+    {
+      "name": "L3.ln1_b",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 5091840
+    },
+    {
+      "name": "L3.qkv_w",
+      "shape": [
+        960,
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 5092160
+    },
+    {
+      "name": "L3.qkv_b",
+      "shape": [
+        960
+      ],
+      "dtype": "fp32",
+      "offset_floats": 5399360
+    },
+    {
+      "name": "L3.proj_w",
+      "shape": [
+        320,
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 5400320
+    },
+    {
+      "name": "L3.proj_b",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 5502720
+    },
+    {
+      "name": "L3.ln2_w",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 5503040
+    },
+    {
+      "name": "L3.ln2_b",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 5503360
+    },
+    {
+      "name": "L3.fc_w",
+      "shape": [
+        1280,
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 5503680
+    },
+    {
+      "name": "L3.fc_b",
+      "shape": [
+        1280
+      ],
+      "dtype": "fp32",
+      "offset_floats": 5913280
+    },
+    {
+      "name": "L3.proj2_w",
+      "shape": [
+        320,
+        1280
+      ],
+      "dtype": "fp32",
+      "offset_floats": 5914560
+    },
+    {
+      "name": "L3.proj2_b",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 6324160
+    },
+    {
+      "name": "L4.ln1_w",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 6324480
+    },
+    {
+      "name": "L4.ln1_b",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 6324800
+    },
+    {
+      "name": "L4.qkv_w",
+      "shape": [
+        960,
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 6325120
+    },
+    {
+      "name": "L4.qkv_b",
+      "shape": [
+        960
+      ],
+      "dtype": "fp32",
+      "offset_floats": 6632320
+    },
+    {
+      "name": "L4.proj_w",
+      "shape": [
+        320,
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 6633280
+    },
+    {
+      "name": "L4.proj_b",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 6735680
+    },
+    {
+      "name": "L4.ln2_w",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 6736000
+    },
+    {
+      "name": "L4.ln2_b",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 6736320
+    },
+    {
+      "name": "L4.fc_w",
+      "shape": [
+        1280,
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 6736640
+    },
+    {
+      "name": "L4.fc_b",
+      "shape": [
+        1280
+      ],
+      "dtype": "fp32",
+      "offset_floats": 7146240
+    },
+    {
+      "name": "L4.proj2_w",
+      "shape": [
+        320,
+        1280
+      ],
+      "dtype": "fp32",
+      "offset_floats": 7147520
+    },
+    {
+      "name": "L4.proj2_b",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 7557120
+    },
+    {
+      "name": "L5.ln1_w",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 7557440
+    },
+    {
+      "name": "L5.ln1_b",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 7557760
+    },
+    {
+      "name": "L5.qkv_w",
+      "shape": [
+        960,
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 7558080
+    },
+    {
+      "name": "L5.qkv_b",
+      "shape": [
+        960
+      ],
+      "dtype": "fp32",
+      "offset_floats": 7865280
+    },
+    {
+      "name": "L5.proj_w",
+      "shape": [
+        320,
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 7866240
+    },
+    {
+      "name": "L5.proj_b",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 7968640
+    },
+    {
+      "name": "L5.ln2_w",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 7968960
+    },
+    {
+      "name": "L5.ln2_b",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 7969280
+    },
+    {
+      "name": "L5.fc_w",
+      "shape": [
+        1280,
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 7969600
+    },
+    {
+      "name": "L5.fc_b",
+      "shape": [
+        1280
+      ],
+      "dtype": "fp32",
+      "offset_floats": 8379200
+    },
+    {
+      "name": "L5.proj2_w",
+      "shape": [
+        320,
+        1280
+      ],
+      "dtype": "fp32",
+      "offset_floats": 8380480
+    },
+    {
+      "name": "L5.proj2_b",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 8790080
+    },
+    {
+      "name": "L6.ln1_w",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 8790400
+    },
+    {
+      "name": "L6.ln1_b",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 8790720
+    },
+    {
+      "name": "L6.qkv_w",
+      "shape": [
+        960,
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 8791040
+    },
+    {
+      "name": "L6.qkv_b",
+      "shape": [
+        960
+      ],
+      "dtype": "fp32",
+      "offset_floats": 9098240
+    },
+    {
+      "name": "L6.proj_w",
+      "shape": [
+        320,
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 9099200
+    },
+    {
+      "name": "L6.proj_b",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 9201600
+    },
+    {
+      "name": "L6.ln2_w",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 9201920
+    },
+    {
+      "name": "L6.ln2_b",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 9202240
+    },
+    {
+      "name": "L6.fc_w",
+      "shape": [
+        1280,
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 9202560
+    },
+    {
+      "name": "L6.fc_b",
+      "shape": [
+        1280
+      ],
+      "dtype": "fp32",
+      "offset_floats": 9612160
+    },
+    {
+      "name": "L6.proj2_w",
+      "shape": [
+        320,
+        1280
+      ],
+      "dtype": "fp32",
+      "offset_floats": 9613440
+    },
+    {
+      "name": "L6.proj2_b",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 10023040
+    },
+    {
+      "name": "L7.ln1_w",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 10023360
+    },
+    {
+      "name": "L7.ln1_b",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 10023680
+    },
+    {
+      "name": "L7.qkv_w",
+      "shape": [
+        960,
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 10024000
+    },
+    {
+      "name": "L7.qkv_b",
+      "shape": [
+        960
+      ],
+      "dtype": "fp32",
+      "offset_floats": 10331200
+    },
+    {
+      "name": "L7.proj_w",
+      "shape": [
+        320,
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 10332160
+    },
+    {
+      "name": "L7.proj_b",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 10434560
+    },
+    {
+      "name": "L7.ln2_w",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 10434880
+    },
+    {
+      "name": "L7.ln2_b",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 10435200
+    },
+    {
+      "name": "L7.fc_w",
+      "shape": [
+        1280,
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 10435520
+    },
+    {
+      "name": "L7.fc_b",
+      "shape": [
+        1280
+      ],
+      "dtype": "fp32",
+      "offset_floats": 10845120
+    },
+    {
+      "name": "L7.proj2_w",
+      "shape": [
+        320,
+        1280
+      ],
+      "dtype": "fp32",
+      "offset_floats": 10846400
+    },
+    {
+      "name": "L7.proj2_b",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 11256000
+    },
+    {
+      "name": "lnf_w",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 11256320
+    },
+    {
+      "name": "lnf_b",
+      "shape": [
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 11256640
+    },
+    {
+      "name": "head_w",
+      "shape": [
+        4096,
+        320
+      ],
+      "dtype": "fp32",
+      "offset_floats": 11256960
+    }
+  ],
+  "n_floats": 12567680,
+  "bytes": 50270720
+}

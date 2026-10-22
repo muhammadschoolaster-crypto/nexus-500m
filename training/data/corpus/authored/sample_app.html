@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nexus Demo</title>
+  <style>
+    body { font-family: sans-serif; margin: 2rem; background: #fafafa; }
+    .card { border: 1px solid #ddd; border-radius: 8px; padding: 1rem; }
+    button.primary { background: #2563eb; color: white; border: none; padding: 0.5rem 1rem; }
+  </style>
+</head>
+<body>
+  <h1>NEXUS Assistant</h1>
+  <div class="card">
+    <p>An offline-first assistant with an on-device language model.</p>
+    <button class="primary" onclick="alert('offline ok')">Start</button>
+  </div>
+  <script>
+    const model = { name: "nexus", params: 12567360, quantized: false };
+    function greet(user) {
+      return "Hello, " + user + "! I run entirely on this device.";
+    }
+  </script>
+</body>
+</html>

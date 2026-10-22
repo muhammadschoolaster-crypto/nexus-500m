@@ -1,58 +1,97 @@
 # NEXUS-500M
 
-**An independent, offline-first personal AI assistant with its own language model, trained from randomly initialized weights, running fully on-device on Android.**
+An **offline-first Android AI assistant** powered by an independently-trained
+Transformer language model (the "NEXUS" model family), with:
 
-- **Core AI**: a from-scratch GPT-style causal Transformer language model (no third-party chatbot APIs, no pretrained LLM wrappers).
-- **Platform**: native Android application written in Kotlin + Jetpack Compose, with a pure-Kotlin on-device inference engine.
-- **Primary skills**: coding intelligence and professional/creative writing, instruction following, persistent personal memory, and a permission-controlled autonomous task engine.
-- **Offline first**: core chat, memory, and local tools work with no internet connection. Web research is optional and consent-gated.
+- **own model** — trained from random initialization; no third-party LLM, no API wrapper, no cloud
+- **coding specialization** — Python, Kotlin, JS, HTML/CSS, SQL, shell (domain-tagged corpus)
+- **writing specialization** — books + instruction-tuned response formats
+- **persistent memory** — on-device SQLite, user-approved, exportable, deletable
+- **provably offline** — the Android manifest declares **zero network permissions**
 
-## Honest status overview
-
-| Area | Status (evidence-based, see `docs/MILESTONES.md`) |
-|---|---|
-| 500M-parameter architecture | Implemented and **exactly counted** (~507M parameters for the `nexus_500m` config) |
-| Training pipeline (base + SFT + eval + export) | Implemented, unit-tested, runs end to end |
-| Real training executed | **Small-scale demonstration run** (CPU-only environment; full 500M run requires GPU compute — see `docs/TRAINING.md`) |
-| Android app (chat, memory, agent, storage) | Implemented in Kotlin/Compose with bundled NEXUS demo checkpoint for fully offline inference |
-| CI | GitHub Actions runs the Python test suite on every push |
-
-> **Integrity policy**: nothing in this repository pretends a model was trained when it was not. The 500M configuration is fully specified and verified by parameter counting; the *demonstration* checkpoint shipped with the app is a genuinely trained tiny-scale NEXUS model, clearly labeled as such (`nexus-demo`), produced by the exact same pipeline that would train the 500M configuration given adequate compute.
+> **STATUS — read this first (honest engineering statement):**
+>
+> - The full training pipeline, tokenizer, model, export and on-device inference
+>   are **real, implemented, and verified end-to-end** (engine equivalence
+>   proven to 5e-6 max logit difference vs PyTorch).
+> - The **~500M target config** (`nexus_lm/configs/nexus_500m.json` =
+>   **496,458,240 params**, exact count verified by formula and instantiation)
+>   is **defined but NOT trained**: the build machine has **2 CPU cores, no
+>   GPU**, and 500M-param training requires ~10B tokens and hundreds of
+>   A100-GPU-hours. Fabricating results is prohibited by this project's rules.
+> - What WAS genuinely trained: **NEXUS-PoC (12,567,680 params)** — 3,500
+>   pretraining steps (7.2M tokens, real loss 8.41 → 3.44, best val loss 3.54)
+>   + 176 instruction-tuning steps (val 1.79 → 0.65). That model is what
+>   ships inside the APK and runs on your phone.
 
 ## Repository layout
 
 ```
-configs/          Model configuration presets (nexus_500m, nexus_demo, nexus_smoke)
-nexus/            Python package: tokenizer, Transformer model, data, training, SFT, evaluation, export
-scripts/          Demo data preparation, smoke training, secret scanning
-tests/            pytest unit + integration tests (real runs recorded in CI)
-artifacts/        Small demo training artifacts: logs, eval reports, mobile model
-data/             Data pipeline rules + small provenance-clean demo corpus
-docs/             Architecture, training/compute plan, data licensing, app guide, milestone status
-android/          Native Android application (Kotlin, Jetpack Compose, offline inference engine)
-.github/          CI workflows
+nexus-500m/
+├── nexus_lm/                 # ML pipeline (pure PyTorch + stdlib)
+│   ├── model.py              # GPT-style decoder-only transformer (exact param count)
+│   ├── tokenizer.py          # from-scratch BPE (pure stdlib, Kotlin-portable)
+│   ├── data.py               # corpus → uint16 token bins (domain-tagged)
+│   ├── train.py              # AdamW + cosine LR + warmup, ckpt/resume, CSV logs
+│   ├── sample.py             # generation from checkpoints
+│   ├── export_android.py    # fp32 export per documented tensor plan
+│   └── configs/
+│       ├── nexus_poc.json    # 12.57M params — the ACTUALLY-TRAINED PoC
+│       └── nexus_500m.json   # 496.5M params — the verified TARGET config
+├── training/
+│   ├── data/corpus/          # licensing-clean corpus (+ corpus_manifest.json)
+│   ├── tokenizer.json
+│   ├── runs/poc/             # real checkpoints + train_log.csv + val_log.csv
+│   └── runs/instruct/        # instruction-tuned checkpoints + logs
+├── scripts/                  # corpus build, tokenizer training, verification, plots
+├── android/NexusAssistant/   # Android app (Kotlin, pure-on-device inference)
+├── docs/                     # TRAINING_REPORT.md, HANDOVER.md, curves PNG
+└── samples/                  # real model samples (verbatim)
 ```
 
-## Quick start (Python side)
+## Quick start (reproduce the training)
 
 ```bash
-python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-pytest tests/ -q                     # run the full test suite
-python -m nexus.count_params         # verify the exact 500M parameter count
-scripts/run_smoke_training.sh        # reproduce the real tiny-scale training run
+pip install torch numpy
+python scripts/build_corpus.py                     # or use training/data as-is
+python scripts/train_tokenizer_build_bins.py       # BPE 4096 → bins
+python -m nexus_lm.train --config nexus_lm/configs/nexus_poc.json \
+    --prefix training/data/nexus_poc --out training/runs/poc \
+    --steps 3500 --batch 8 --lr 1e-3 --warmup 100   # ~50 min on 2 CPU cores
+python scripts/build_instruct_bins.py              # instruction bins
+# (copy nexus_ckpt.pt into training/runs/instruct/, then resume with --lr 1.5e-4)
+python -m nexus_lm.sample --ckpt training/runs/poc/nexus_best.pt \
+    --tokenizer training/tokenizer.json --prompt "..." 
+python -m nexus_lm.export_android --ckpt training/runs/instruct/nexus_best.pt \
+    --tokenizer training/tokenizer.json --outdir <assets-dir>
+python scripts/verify_kotlin_equivalence.py        # on-device math proof
 ```
 
-## Quick start (Android side)
+To train the **496M target**: same pipeline, swap in
+`nexus_lm/configs/nexus_500m.json`, scale data to ~10B licensed tokens and run
+on a GPU cluster (est. 8×A100 × ~1 week at 4096-token batches; budget
+roughly 400–700 A100-hours). The pipeline requires no code changes.
 
-See `docs/ANDROID_APP.md`. The app bundles a real trained demo model (`nexus-demo-v0.1`) so offline chat works on first launch with zero downloads and zero internet.
+## Android app
+
+- Kotlin + Material 3 (classic Views for maximum build reliability), minSdk 26
+- **Chat** / **Code** / **Write** modes (domain-tagged prompting)
+- **Pure-Kotlin transformer inference** — fp32, K/V-cached, no TFLite, no native libs
+- Persistent memory: type `remember: …` in chat; view/delete/export via toolbar
+- Conversation search, new chat, model info, dark mode
+- **No INTERNET permission** in the manifest — offline is provable
+
+Build: open `android/NexusAssistant` in Android Studio, or
+`gradle :app:assembleDebug` with `local.properties` pointing at your SDK.
 
 ## License
 
-- This project's code and documentation: **MIT** (see `LICENSE`).
-- Third-party dependencies and their licenses are disclosed in `docs/DATA_AND_LICENSES.md`.
-- Demo training data provenance and licenses: `docs/DATA_AND_LICENSES.md` and `data/demo/manifest.json`.
+MIT for this repository's code. Corpus keeps its own provenance
+(`training/data/corpus_manifest.json`): Project Gutenberg (public domain),
+CPython stdlib (PSF), authored samples (MIT).
 
 ## Security
 
-See `SECURITY.md`. Summary of hard rules: no API keys, tokens, keystores, passwords, private chats or confidential data are ever committed; secret scanning runs before every push; the personal APK and signing keys are kept out of public releases.
+See `SECURITY.md`. No secrets are committed; the build machine never stored the
+GitHub PAT used in the originating chat session (it was never re-entered here,
+and it should be revoked regardless).

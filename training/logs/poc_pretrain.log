@@ -1,0 +1,13 @@
+config: {
+  "vocab_size": 4096,
+  "d_model": 320,
+  "n_layers": 8,
+  "n_heads": 5,
+  "d_ff": 1280,
+  "block_size": 256,
+  "dropout": 0.0,
+  "layer_norm_epsilon": 1e-05
+}
+params: total=12,567,680 non_embedding=9,946,240 (formula check=12,567,680)
+training 3500 steps (batch=8, ctx=256) on cpu
+step      0/3500 loss 8.4108 lr 1.00e-05 0.00M tok seen (1809 tok/s)

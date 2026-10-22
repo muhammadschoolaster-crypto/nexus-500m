@@ -1,41 +1,37 @@
-# ===== Secrets & credentials (NEVER COMMIT) =====
-.env
-.env.*
-*.token
-*ghtoken*
-.netrc
-*.jks
-*.keystore
-key.properties
-secrets.properties
-
-# ===== Python =====
+# Python
 __pycache__/
-*.py[cod]
-*.egg-info/
+*.pyc
 .venv/
-venv/
-.pytest_cache/
-.coverage
 
-# ===== Heavy training artifacts (keep repo small) =====
-artifacts/checkpoints/
-artifacts/runs/
-*.pt
-*.bin
-*.safetensors
-!artifacts/demo_model/*.nexus
+# Training artifacts (large)
+training/runs/*/nexus_ckpt.pt
+training/data/*.npy
 
-# ===== Android / Gradle =====
-android/.gradle/
-android/build/
-android/app/build/
-android/local.properties
-*.apk
-*.aab
-!gradle/wrapper/gradle-wrapper.jar
+# Android
+android/NexusAssistant/.gradle/
+android/NexusAssistant/build/
+android/NexusAssistant/app/build/
+android/NexusAssistant/local.properties
+*.apk.idsig
+*.keystore
+*.jks
 
-# ===== OS / editor =====
+# Secrets - never commit
+*.pem
+*.key
+.env
+gha_token*
+*_pat*
+
+# OS
 .DS_Store
-.idea/
-*.iml
+
+# Gradle caches (top-level)
+android/.gradle/
+.gradle/
+*.lock
+
+# Android build outputs (old v0.1.0 app too) + machine-local files
+android/app/build/
+android/app/.gradle/
+local.properties

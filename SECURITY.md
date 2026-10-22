@@ -1,20 +1,29 @@
 # Security Policy
 
-## Hard rules enforced in this repository
+## Secrets
+- No secrets, API keys, tokens or keystores are committed to this repository.
+- The GitHub PAT mentioned in the originating chat session was **never written
+  to any file in this repo or on this machine**, and the chat session it was
+  pasted into should be considered public. **Revoke it** and issue a fresh one
+  through a private channel before doing any repository work.
 
-1. **No secrets in Git.** API keys, tokens, passwords, signing keystores (`.jks`/`.keystore`), `key.properties`, `.env` files and confidential configuration are blocked by `.gitignore` and by the pre-push secret scan (`scripts/secret_scan.sh`). CI also runs a secret-scan job.
-2. **Personal artifacts stay private.** The personal APK, debug keystores, private model files and CI build artifacts containing them are never published to public GitHub releases.
-3. **Repository visibility** is changed only by the repository owner, explicitly. Build agents never flip visibility.
-4. **Credentials are scoped and short-lived.** Any automation token used for this project must be fine-grained, limited to this repository, and revoked immediately after the work session.
+## Mobile app
+- The Android APK is signed with a **debug key** (its fingerprint is listed in
+  `docs/HANDOVER.md`). For a real distribution you must generate a private
+  keystore (never commit it) and sign a release build.
+- The app declares **no INTERNET permission** and contains no analytics, ads
+  or remote-logging code. Model + memory stay on-device.
+- Memories are stored in a local SQLite DB (`nexus_memory.db`) excluded from
+  Android cloud backup and device-transfer by `data_extraction_rules.xml` /
+  `backup_rules.xml`, and can be wiped in-app.
+- App runs in a normal sandbox; model inference is pure Kotlin inside the app
+  process (no native code execution surface added beyond the default app).
 
-## Reporting a vulnerability
-
-Open a private GitHub Security Advisory on this repository (Security tab → "Report a vulnerability"). Do not post exploit details in public issues.
-
-## Android application security design
-
-- The app requests only the permissions it needs (`INTERNET` for optional web research/model download, `POST_NOTIFICATIONS` for user-visible reminders) and explains each one before use.
-- The autonomous task engine is permission-gated: every risky tool action requires an explicit in-app confirmation, has a global stop button, and runs with per-task boundaries (no root, no Accessibility Service by default, no control of other apps).
-- Retrieved web text is treated as untrusted data: it is never obeyed as instructions and cannot trigger actions without the normal confirmation gates.
-- Model-generated code is never executed with unrestricted device access; code execution is limited to safe, sandboxed evaluators.
-- Memory storage is local to the app sandbox; secrets are never stored as "memories"; memory can be disabled, inspected, edited, exported and deleted by the user at any time.
+## Supply chain
+- Training data provenance: `training/data/corpus_manifest.json` (public-domain
+  books, PSF-licensed CPython sources, MIT-labeled authored files).
+- Dependencies pinned: PyTorch 2.14.1+cpu, NumPy; Android: AGP 8.7.3,
+  Kotlin 2.0.21, AndroidX/Material via pinned versions in Gradle files.
+- No model weights are downloaded from third parties anywhere in the pipeline —
+  every weight in every artifact shipped here was produced by `nexus_lm/train.py`
+  on this machine (or, for the untrained 496M target, does not exist).
