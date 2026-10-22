@@ -1,0 +1,56 @@
+{
+  "model": "nexus-demo v0.1.0",
+  "architecture": "GPT-style decoder-only causal Transformer, pre-LN, tied embeddings, GELU(tanh)",
+  "parameters": 886528,
+  "config": {
+    "d_model": 128,
+    "n_layers": 3,
+    "n_heads": 4,
+    "d_ff": 512,
+    "ctx_len": 256,
+    "vocab_size": 2048
+  },
+  "tokenizer": {
+    "type": "byte-level BPE (project-trained)",
+    "vocab_size": 2048
+  },
+  "training": {
+    "hardware": "2 vCPU (no GPU)",
+    "base_steps": 500,
+    "sft_steps": 150,
+    "base_final_train_loss": 0.4982,
+    "base_val_loss": 2.0997,
+    "sft_val_loss": 4.0782,
+    "dataset": "data/demo/prepared (project-authored demo corpus, see manifest.json)",
+    "dataset_tokens": {
+      "train": 19436,
+      "val": 1027,
+      "test": 2570
+    },
+    "sft_examples": 104,
+    "total_time_seconds": 4125.0
+  },
+  "evaluation": {
+    "base": {
+      "heldout_loss": 2.4867,
+      "heldout_ppl": 12.022,
+      "coding_parse_rate": 0.0,
+      "writing_avg_words": 20.6,
+      "writing_distinct_ratio": 0.898
+    },
+    "sft": {
+      "heldout_loss_on_base_testset": 3.2525,
+      "coding_parse_rate": 0.0,
+      "writing_avg_words": 17.6,
+      "writing_distinct_ratio": 0.983
+    }
+  },
+  "honest_limitations": [
+    "This is a tiny (0.89M-parameter) demonstration checkpoint trained on a ~19K-token corpus.",
+    "It produces mostly word-salad with recognizable learned fragments; it cannot hold conversations, write correct code, or follow instructions reliably (coding parse rate 0.0 in evaluation).",
+    "It exists to prove the END-TO-END pipeline is real: from-scratch training -> int8 export -> verified on-device inference with Python/Kotlin numeric parity.",
+    "The nexus_500m configuration (507,418,560 parameters) is fully specified and verified by parameter counting; training it needs the GPU compute documented in docs/TRAINING.md."
+  ],
+  "file_sha256": "6e84210e14c5be1c89cba51823f02b08b849c5b89e29bcb15f12d89ca9a3c120",
+  "file_size_bytes": 796834
+}

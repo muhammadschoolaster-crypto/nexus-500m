@@ -1,0 +1,15 @@
+{
+  "models": [
+    {
+      "file": "nexus-demo-v0.1.0.nexus",
+      "name": "nexus-demo",
+      "version": "0.1.0",
+      "sha256": "6e84210e14c5be1c89cba51823f02b08b849c5b89e29bcb15f12d89ca9a3c120",
+      "size_bytes": 796834,
+      "license": "MIT (this repository)",
+      "ram_estimate_bytes": 3546112,
+      "compatible": true,
+      "notes": "tiny demo checkpoint genuinely trained by this project's pipeline (base 500 steps + SFT 150 steps, CPU). Scale demonstration only - NOT a claim of assistant-level capability."
+    }
+  ]
+}

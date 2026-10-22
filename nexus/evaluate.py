@@ -72,6 +72,8 @@ def gen_text(model, tok, prompt: str, max_new: int = 48) -> str:
 
 
 def check_python_parses(code: str) -> bool:
+    if not code.strip():
+        return False          # empty output is NOT valid generated code
     try:
         ast.parse(code)
         return True
@@ -114,22 +116,21 @@ def evaluate(ckpt: str | Path, tokenizer_path: str | Path, test_bins: str = "",
 
     coding_results = []
     for prompt in CODING_PROMPTS:
-        out = gen_text(model, tok, prompt, max_new=48)
-        # stop at end of instruction block if template continues
-        out = out.split("### Instruction:")[0]
-        code = extract_code(out.split("### Response:\n", 1)[-1])
+        full = gen_text(model, tok, prompt, max_new=48)
+        continuation = full[len(prompt):]          # text the model added after the prompt
+        code = extract_code(continuation)
         coding_results.append({"prompt": prompt[:60], "parses": check_python_parses(code),
-                               "sample": out.strip()[:120]})
+                               "sample": continuation.strip()[:120]})
     report["coding_parse_rate"] = round(
         sum(1 for r in coding_results if r["parses"]) / len(coding_results), 3)
     report["coding_samples"] = coding_results
 
     writing_results = []
     for prompt in WRITING_PROMPTS:
-        out = gen_text(model, tok, prompt, max_new=48)
-        out = out.split("### Instruction:")[0].split("### Response:\n")[-1]
-        writing_results.append({"prompt": prompt[:60], **writing_metrics(out),
-                                "sample": out.strip()[:120]})
+        full = gen_text(model, tok, prompt, max_new=48)
+        continuation = full[len(prompt):]
+        writing_results.append({"prompt": prompt[:60], **writing_metrics(continuation),
+                                "sample": continuation.strip()[:120]})
     report["writing_avg_words"] = round(
         float(np.mean([r["words"] for r in writing_results])), 1)
     report["writing_avg_distinct_ratio"] = round(

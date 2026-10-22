@@ -24,7 +24,7 @@ from nexus.tokenizer import BPETokenizer
 
 SEED = 20260101
 DEMO_VOCAB = 2048          # 256 bytes + 1791 merges + 1 EOS
-EXPANSION_VARIANTS = 7     # paragraph-shuffled variants per seed document
+EXPANSION_VARIANTS = 8     # paragraph-shuffled variants per eligible document
 
 ROOT = Path(__file__).resolve().parents[1]
 SEEDS = ROOT / "data" / "demo" / "seeds"
@@ -32,15 +32,16 @@ OUT = ROOT / "data" / "demo" / "prepared"
 
 
 def load_seed_docs() -> list:
-    docs, provenance = [], []
+    """Each '## ' section of each seed file becomes one document
+    (explanation + code together), keeping documents substantial."""
+    import re
+    docs = []
     for path in sorted(SEEDS.glob("*.txt")):
         text = path.read_text(encoding="utf-8")
-        for para_block in text.split("\n\n"):
-            # Each seed file is split into chunk documents at paragraph level,
-            # keeping each chunk substantial (>200 chars) so each is a real doc.
-            if len(para_block.strip()) > 200:
+        for sec in re.split(r"\n(?=## )", text):
+            if len(sec.strip()) > 250:
                 docs.append({
-                    "text": para_block.strip(),
+                    "text": sec.strip(),
                     "source": f"data/demo/seeds/{path.name}",
                     "license": "MIT (project-authored)",
                     "origin": "seed",
@@ -50,12 +51,12 @@ def load_seed_docs() -> list:
 
 def expand(docs: list, rng: random.Random) -> list:
     """Deterministic synthetic expansion: shuffle paragraph order within docs
-    that have >= 4 paragraphs. Honest label: 'synthetic_expansion'."""
+    that have >= 3 paragraphs. Honest label: 'synthetic_expansion'."""
     out = []
     for d in docs:
         out.append(d)
         paras = [p for p in d["text"].split("\n\n") if p.strip()]
-        if len(paras) < 4:
+        if len(paras) < 3:
             continue
         for _ in range(EXPANSION_VARIANTS):
             variant = paras[:]

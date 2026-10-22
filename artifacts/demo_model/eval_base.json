@@ -1,0 +1,86 @@
+{
+  "label": "base",
+  "config": {
+    "name": "nexus_demo",
+    "vocab_size": 2048,
+    "d_model": 128,
+    "n_layers": 3,
+    "n_heads": 4,
+    "d_ff": 512,
+    "ctx_len": 256,
+    "dropout": 0.0,
+    "tie_embeddings": true
+  },
+  "scale_note": "tiny demo model (886,528 params), base stage, 500 steps CPU on 19K-token demo corpus",
+  "params": 886528,
+  "checkpoint_step": 500,
+  "heldout_loss": 2.4867,
+  "heldout_ppl": 12.022,
+  "coding_parse_rate": 0.0,
+  "coding_samples": [
+    {
+      "prompt": "### Instruction:\nWrite a Python function named add that retu",
+      "parses": false,
+      "sample": "return items[1]` \u2014 the a ## Function: sub\n\n\n\nExample: `add(2, 3)` returns `reply\n\n\nExample: after these lines, `True` wh"
+    },
+    {
+      "prompt": "### Instruction:\nWrite a Python function named is_even that ",
+      "parses": false,
+      "sample": "return int(text)\n return None\n return len(sentence.split())\n```"
+    },
+    {
+      "prompt": "### Instruction:\nWrite a Python function named greet that re",
+      "parses": false,
+      "sample": "return s?.length\n}\n return \"positive\"\n return a  a the for a = 0\n return text bholders.\n\n## Function: sub"
+    },
+    {
+      "prompt": "### Instruction:\nWrite a Python for loop that prints the num",
+      "parses": false,
+      "sample": "return s?.length\n}\n return f\"Hello, {name}\"\n```\n\n## Email: is a it is a add(a, b7)` returns `max` takes a `max` takes a "
+    },
+    {
+      "prompt": "### Instruction:\nWrite a Kotlin val declaration that stores ",
+      "parses": false,
+      "sample": "return no argums"
+    }
+  ],
+  "writing_avg_words": 20.6,
+  "writing_avg_distinct_ratio": 0.898,
+  "writing_samples": [
+    {
+      "prompt": "### Instruction:\nWrite a one-paragraph welcome email to a ne",
+      "words": 35,
+      "distinct_ratio": 1.0,
+      "avg_word_len": 4.57,
+      "sample": "return a = your colleagues and the second. In my current progress, the data Example: `add(2, 3)` returns `%`. A number {"
+    },
+    {
+      "prompt": "### Instruction:\nExplain in one short paragraph why backing ",
+      "words": 18,
+      "distinct_ratio": 0.824,
+      "avg_word_len": 2.94,
+      "sample": "return a = x in items:\n return a = x\n return text so real bugs are not ("
+    },
+    {
+      "prompt": "### Instruction:\nWrite a two-sentence summary of what a cale",
+      "words": 18,
+      "distinct_ratio": 1.0,
+      "avg_word_len": 3.94,
+      "sample": "return a = x in is a data  return long the number is one. Prefer `val` whenever possible."
+    },
+    {
+      "prompt": "### Instruction:\nWrite a friendly one-paragraph note remindi",
+      "words": 19,
+      "distinct_ratio": 0.833,
+      "avg_word_len": 2.79,
+      "sample": "the data and the is a + b;\n}\n return This is a \"__main__\":\n is a + 1]\n```"
+    },
+    {
+      "prompt": "### Instruction:\nDescribe in one paragraph what an offline A",
+      "words": 13,
+      "distinct_ratio": 0.833,
+      "avg_word_len": 4.23,
+      "sample": "return a string twith the is a = items[0]\n return a string templates"
+    }
+  ]
+}

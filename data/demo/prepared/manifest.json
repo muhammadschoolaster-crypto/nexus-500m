@@ -1,0 +1,41 @@
+{
+  "dataset": "nexus-demo-corpus",
+  "version": "0.1.0",
+  "seed": 20260101,
+  "provenance": {
+    "origin": "100% project-authored seed documents (code examples with explanations, professional emails/letters, technical knowledge paragraphs, short stories, instruction/response pairs) written for this project",
+    "licenses": [
+      "MIT (project)"
+    ],
+    "expansion": "deterministic synthetic expansion by paragraph-order shuffling (8 variants per eligible document); every expanded document is labeled origin=synthetic_expansion and traces back to its seed",
+    "external_sources": "none. No web scraping, no third-party datasets."
+  },
+  "pipeline": [
+    "clean",
+    "sensitive_filter",
+    "dedupe_exact+normalized",
+    "hash_split",
+    "bpe_train",
+    "pack"
+  ],
+  "counts": {
+    "train": 270,
+    "val": 11,
+    "test": 30
+  },
+  "sft_counts": {
+    "train": 81,
+    "val": 9,
+    "test": 14
+  },
+  "tokenizer": {
+    "vocab_size": 2048,
+    "merges": 1791,
+    "eos_token_id": 2047
+  },
+  "bins": {
+    "train": "/home/z/my-project/nexus-500m/data/demo/prepared/sft_train.bin.npy",
+    "val": "/home/z/my-project/nexus-500m/data/demo/prepared/sft_val.bin.npy",
+    "test": "/home/z/my-project/nexus-500m/data/demo/prepared/test.bin.npy"
+  }
+}

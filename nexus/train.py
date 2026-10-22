@@ -139,6 +139,12 @@ def train(args) -> dict:
 
     optimizer = build_optimizer(model, args.lr)
     start_step, best_val = 0, float("inf")
+    if getattr(args, "init_from", "") and Path(args.init_from).exists():
+        # weights-only initialization (e.g. SFT starting from a base checkpoint):
+        # the step counter and optimizer state start fresh for the new stage.
+        ck = torch.load(args.init_from, map_location="cpu", weights_only=False)
+        model.load_state_dict(ck["model"])
+        print(f"initialized weights from {args.init_from} (step counter reset to 0)")
     if args.resume and Path(args.resume).exists():
         ck = load_checkpoint(args.resume, model, optimizer)
         start_step, best_val = ck["step"], ck.get("val_loss", float("inf"))
@@ -210,6 +216,7 @@ def build_argparser() -> argparse.ArgumentParser:
     p.add_argument("--val-every", type=int, default=100)
     p.add_argument("--save-every", type=int, default=100)
     p.add_argument("--resume", default="")
+    p.add_argument("--init-from", default="", help="weights-only init from a checkpoint (new stage, step counter resets)")
     p.add_argument("--device", default="cpu")
     p.add_argument("--stage", default="base", help="base | sft (recorded in logs)")
     return p

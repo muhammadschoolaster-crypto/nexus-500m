@@ -1,0 +1,86 @@
+{
+  "label": "sft",
+  "config": {
+    "name": "nexus_demo",
+    "vocab_size": 2048,
+    "d_model": 128,
+    "n_layers": 3,
+    "n_heads": 4,
+    "d_ff": 512,
+    "ctx_len": 256,
+    "dropout": 0.0,
+    "tie_embeddings": true
+  },
+  "scale_note": "tiny demo model (886,528 params) after 150 SFT steps on 104 instruction examples",
+  "params": 886528,
+  "checkpoint_step": 150,
+  "heldout_loss": 3.2525,
+  "heldout_ppl": 25.854,
+  "coding_parse_rate": 0.0,
+  "coding_samples": [
+    {
+      "prompt": "### Instruction:\nWrite a Python function named add that retu",
+      "parses": false,
+      "sample": "Explain a number and check the deassistant has been of an-steelpalling with to-friendly small cight with is on:\nWrite a "
+    },
+    {
+      "prompt": "### Instruction:\nWrite a Python function named is_even that ",
+      "parses": false,
+      "sample": "Explain a number is unclear, ful   return f\"Hello, {name}\"\n```\n\n```python\nreturns `None` instead of len(sentence.split()"
+    },
+    {
+      "prompt": "### Instruction:\nWrite a Python function named greet that re",
+      "parses": false,
+      "sample": "Disistant to a function that cirite a It is a string is based on a question file cening sing. The first true a for examp"
+    },
+    {
+      "prompt": "### Instruction:\nWrite a Python for loop that prints the num",
+      "parses": false,
+      "sample": "Expla.\n\n```python\ndef sum_of_list(items):\n      return None\n    return a function that the searcys[:ainte a test. The se"
+    },
+    {
+      "prompt": "### Instruction:\nWrite a Kotlin val declaration that stores ",
+      "parses": false,
+      "sample": "CSquente a file .\n\n```python\ndef variable, `False` when privar.involved an Apped k k the is reslick the assistant mplain"
+    }
+  ],
+  "writing_avg_words": 17.6,
+  "writing_avg_distinct_ratio": 0.983,
+  "writing_samples": [
+    {
+      "prompt": "### Instruction:\nWrite a one-paragraph welcome email to a ne",
+      "words": 20,
+      "distinct_ratio": 1.0,
+      "avg_word_len": 3.95,
+      "sample": "E return a can se, and shideph  first week, and many m-model Inalid file and + b\n```\n\nExample: `afe."
+    },
+    {
+      "prompt": "### Instruction:\nExplain in one short paragraph why backing ",
+      "words": 21,
+      "distinct_ratio": 1.0,
+      "avg_word_len": 4.57,
+      "sample": "Dilocain a The filed to The file makes the loassibatterytassistant e` is a + b\n```\n\nExample: `add(2, 3)` returns `4`."
+    },
+    {
+      "prompt": "### Instruction:\nWrite a two-sentence summary of what a cale",
+      "words": 13,
+      "distinct_ratio": 0.917,
+      "avg_word_len": 4.46,
+      "sample": "For key is a short wet.raph  Instruction\nIn Kotlin, icreen is a Hoder`."
+    },
+    {
+      "prompt": "### Instruction:\nWrite a friendly one-paragraph note remindi",
+      "words": 15,
+      "distinct_ratio": 1.0,
+      "avg_word_len": 3.8,
+      "sample": "Dilocistooa on:\nA for loop to am red it, \nThis file is a planation liit."
+    },
+    {
+      "prompt": "### Instruction:\nDescribe in one paragraph what an offline A",
+      "words": 19,
+      "distinct_ratio": 1.0,
+      "avg_word_len": 4.79,
+      "sample": "Explain what infilete a Python function that sum   const res ory is shaph   return await fulphsled file and bysee"
+    }
+  ]
+}

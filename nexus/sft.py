@@ -33,7 +33,8 @@ def run_sft(args) -> dict:
         config=args.config, train_bins=paths["train"], val_bins=paths["val"],
         out=args.out, steps=args.steps, batch_size=args.batch_size, lr=args.lr,
         warmup=args.warmup, seed=args.seed, log_every=args.log_every,
-        val_every=args.val_every, save_every=args.save_every, resume=args.base_checkpoint,
+        val_every=args.val_every, save_every=args.save_every,
+        init_from=args.base_checkpoint, resume="",
         device=args.device, stage="sft",
     )
     result = train(train_args)
@@ -62,7 +63,7 @@ def build_argparser() -> argparse.ArgumentParser:
     p.add_argument("--config", required=True)
     p.add_argument("--tokenizer", required=True)
     p.add_argument("--instructions", required=True, help="instructions.jsonl")
-    p.add_argument("--base-checkpoint", default="", help="base final.pt to continue from")
+    p.add_argument("--base-checkpoint", default="", help="base final.pt: weights-only init (step counter resets for the SFT stage)")
     p.add_argument("--out", required=True)
     p.add_argument("--steps", type=int, default=120)
     p.add_argument("--batch-size", type=int, default=16)
