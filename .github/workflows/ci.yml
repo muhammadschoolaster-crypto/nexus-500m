@@ -40,7 +40,7 @@ jobs:
         with:
           distribution: temurin
           java-version: "17"
-      - name: Build debug APK (no artifact upload: personal APKs stay out of public CI artifacts)
+      - name: Build debug APK (no artifact upload - personal APKs stay out of public CI artifacts)
         run: |
           cd android
           chmod +x gradlew
