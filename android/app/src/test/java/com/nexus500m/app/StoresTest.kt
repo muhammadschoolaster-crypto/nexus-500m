@@ -43,13 +43,16 @@ class StoresTest {
         store.append(a.id, ChatMessage(UUID.randomUUID().toString(), "user", "kotlin compose question", 1L))
         store.append(b.id, ChatMessage(UUID.randomUUID().toString(), "user", "python pandas question", 1L))
 
-        assertEquals(2, store.search("kotlin").size)
+        assertEquals(1, store.search("kotlin").size)   // only conversation 'a' mentions kotlin
         store.rename(a.id, "Kotlin help")
         assertEquals("Kotlin help", store.get(a.id)!!.title)
         store.setArchived(a.id, true)
         assertEquals(1, store.list().size)
         assertEquals(2, store.list(includeArchived = true).size)
         store.delete(b.id)
+        // 'a' was archived but NOT deleted: archive keeps the data, so it is still there
+        assertEquals(1, store.list(includeArchived = true).size)
+        store.delete(a.id)
         assertEquals(0, store.list(includeArchived = true).size)
     }
 

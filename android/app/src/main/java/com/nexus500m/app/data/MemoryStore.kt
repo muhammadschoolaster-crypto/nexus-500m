@@ -9,7 +9,7 @@ data class Memory(
     var text: String,
     val createdAt: Long,
     val source: String,      // e.g. "user" | "task"
-    val supersededBy: String?,  // id of a newer memory that contradicts+replaces this one
+    var supersededBy: String?,  // id of a newer memory that contradicts+replaces this one
 )
 
 /**
@@ -125,8 +125,9 @@ class MemoryStore(private val file: File) {
             .map { it.first }
     }
 
+    /** Simple contradiction heuristic: same first two keywords, different text. */
     private fun subjectKey(text: String): String =
-        tokenize(text).take(5).joinToString(" ")
+        tokenize(text).take(2).joinToString(" ")
 
     private fun tokenize(text: String): List<String> =
         text.lowercase().split(Regex("[^a-z0-9]+")).filter { it.length >= 3 }

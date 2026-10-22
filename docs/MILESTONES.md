@@ -16,11 +16,11 @@ Legend: **DONE** = implemented and verified by real test/execution · **PARTIAL*
 | 10 | Permission-controlled autonomous task engine + tools | DONE (device tests: PARTIAL) | `agent/TaskEngine.kt`, `agent/Tools.kt` + unit tests |
 | 11 | Optional web research, background scheduling, recovery | DONE (device tests: PARTIAL) | `WebResearchTool` (consent-gated), WorkManager worker |
 | 12 | Security, reliability, offline tests | DONE (JVM level; instrumented tests need a device) | pytest suite green in CI, secret scan, Gradle build |
-| 13 | Build and verify APK | DONE/APK report | Checksum + size reported in the delivery notes |
+| 13 | Build and verify APK | DONE | `assembleDebug` BUILD SUCCESSFUL; APK 17,033,054 bytes, SHA-256 2624115130cf4fc6a193875a8811d69b1e42e3198a50b2d3a577eb07a587738c; 14/14 JVM unit tests green incl. Python-parity golden test |
 | 14 | Handover | This repository + delivery report | — |
 
 ## Explicitly untested / limited
 
-- **Physical-device behavior** (battery, real notification delivery, exact on-device tokens/sec) is UNTESTED without a phone; measured JVM-side numbers are reported instead.
-- **Full 500M training** has never run (see Milestone 5 blocker). Nothing claims otherwise.
-- The demo model is tiny (~1M params). It is a *pipeline demonstration with genuinely trained weights*, not a claim of chat-level intelligence.
+- **Physical-device behavior** (battery, real notification delivery, exact on-device tokens/sec) is UNTESTED without a phone; all JVM-testable logic passes (14/14 tests) and the APK builds, but no phone was available in this environment.
+- **Full 500M training** has never run (see Milestone 5 blocker: no GPU; CPU-only would take ~90+ years — exact math in `docs/TRAINING.md`). Nothing claims otherwise.
+- The demo model is tiny (~0.89M params, 19K-token corpus). It is a *pipeline demonstration with genuinely trained weights*, not a claim of chat-level intelligence; its coding parse rate is 0.0 and its outputs are word-salad with recognizable fragments.

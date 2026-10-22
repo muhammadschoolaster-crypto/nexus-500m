@@ -43,7 +43,7 @@ class InferenceGoldenTest {
     @Test
     fun tokenizerMatchesPythonTokenIds() {
         val engine = loadEngine()
-        val expected = JSONArray(golden.getString("prompt_token_ids"))
+        val expected = golden.getJSONArray("prompt_token_ids")
         // golden stores ints; compare with Kotlin encoding of the same prompt
         val prompt = golden.getString("prompt")
         val encoded = engine.tokenizer.encode(prompt)
@@ -77,7 +77,7 @@ class InferenceGoldenTest {
         val expectedArr = golden.getJSONArray("first_step_logits")
         var maxDiff = 0.0
         for (i in 0 until expectedArr.length()) {
-            maxDiff = maxOf(maxDiff, kotlin.math.abs(logits[i] - expectedArr.getDouble(i).toFloat()))
+            maxDiff = maxOf(maxDiff, kotlin.math.abs(logits[i].toDouble() - expectedArr.getDouble(i)))
         }
         // int8-quantized weights reloaded on two runtimes: tiny float differences
         // are expected, but they must stay small.
@@ -135,7 +135,7 @@ class ToolsTest {
 
     @Test
     fun calculatorHandlesRealExpressions() {
-        assertEquals(44.0, Tools.evaluateExpression("25 * 4 + 10"), 1e-9)
+        assertEquals(110.0, Tools.evaluateExpression("25 * 4 + 10"), 1e-9)   // 25*4=100, +10
         assertEquals(60.0, Tools.evaluateExpression("(12 + 8) * 3"), 1e-9)
         assertEquals(-5.0, Tools.evaluateExpression("-2 - 3"), 1e-9)
         assertEquals(2.5, Tools.evaluateExpression("5 / 2"), 1e-9)

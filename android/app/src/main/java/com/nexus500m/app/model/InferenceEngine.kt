@@ -68,18 +68,18 @@ class InferenceEngine(
             for (i in 0 until d) x[base + i] = wte[emb + i] + wpe[base + i]
         }
 
+        val lnBuf = FloatArray(n * d)      // normalized activations (residual stream x stays intact)
         val attnOut = FloatArray(n * d)
-        val qkvOut = FloatArray(3 * d)   // kept for clarity of the qkv layout
 
         for (layer in 0 until config.nLayers) {
-            // --- x = x + attn(ln1(x)) ---
-            for (t in 0 until n) applyLayerNorm(x, t * d, ln1w(layer), ln1b(layer))
+            // --- x = x + attn(ln1(x)); ln output goes to lnBuf, x preserved for residual ---
+            for (t in 0 until n) layerNormInto(x, t * d, lnBuf, t * d, ln1w(layer), ln1b(layer))
 
             val qw = qkv(layer); val pw = proj(layer)
             // compute q,k,v per position then causal attention per head
             val qkvAll = FloatArray(n * 3 * d)
             for (t in 0 until n) {
-                matvec(qw, x, t * d, qkvAll, t * 3 * d, 3 * d)
+                matvec(qw, lnBuf, t * d, qkvAll, t * 3 * d, 3 * d)
             }
             val scores = FloatArray(n)
             val headOut = FloatArray(n * d)
@@ -122,11 +122,11 @@ class InferenceEngine(
             }
 
             // --- x = x + mlp(ln2(x)) ---
-            for (t in 0 until n) applyLayerNorm(x, t * d, ln2w(layer), ln2b(layer))
+            for (t in 0 until n) layerNormInto(x, t * d, lnBuf, t * d, ln2w(layer), ln2b(layer))
             val fcw = fc(layer); val fpw = fcProj(layer)
             val hidden = FloatArray(config.dff)
             for (t in 0 until n) {
-                matvec(fcw, x, t * d, hidden, 0, config.dff)
+                matvec(fcw, lnBuf, t * d, hidden, 0, config.dff)
                 for (i in 0 until config.dff) {
                     val v = hidden[i]
                     hidden[i] = 0.5f * v * (1f + tanh(0.7978845608028654f * (v + 0.044715f * v * v * v)))
@@ -141,7 +141,7 @@ class InferenceEngine(
         val last = (n - 1) * d
         applyLayerNorm(x, last, lnfw(), lnfb())
         val logits = FloatArray(config.vocabSize)
-        matvecT(wte(), x, last, logits, d, config.vocabSize)
+        matvecT(wte(), x, last, logits, 0, d, config.vocabSize)
         return logits
     }
 
@@ -213,18 +213,24 @@ class InferenceEngine(
     }
 
     private fun applyLayerNorm(x: FloatArray, off: Int, gamma: FloatArray, beta: FloatArray) {
+        layerNormInto(x, off, x, off, gamma, beta)
+    }
+
+    /** dst = LayerNorm(src) (eps=1e-5, biased variance) — src may overlap dst. */
+    private fun layerNormInto(src: FloatArray, srcOff: Int, dst: FloatArray, dstOff: Int,
+                              gamma: FloatArray, beta: FloatArray) {
         var mean = 0f
-        for (i in 0 until d) mean += x[off + i]
+        for (i in 0 until d) mean += src[srcOff + i]
         mean /= d
         var variance = 0f
         for (i in 0 until d) {
-            val diff = x[off + i] - mean
+            val diff = src[srcOff + i] - mean
             variance += diff * diff
         }
         variance /= d
         val invStd = 1f / sqrt(variance + eps)
         for (i in 0 until d) {
-            x[off + i] = (x[off + i] - mean) * invStd * gamma[i] + beta[i]
+            dst[dstOff + i] = (src[srcOff + i] - mean) * invStd * gamma[i] + beta[i]
         }
     }
 
